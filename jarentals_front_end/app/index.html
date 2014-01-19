@@ -7,9 +7,12 @@
 </head>
 <body>
   
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-  -->
+ <div ng-controller="LoginController">
+  <div id="fb-root"></div>
+   <script src="js-fb-auth/fb-auth.js"></script>
+   <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+   <input type="button" ng-click="logout()" value="logout"/>
+ </div>
   
   
   
@@ -20,5 +23,6 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+   <script src="js-fb-auth/fb-auth.js"></script>
 </body>
 </html>

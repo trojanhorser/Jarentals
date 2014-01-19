@@ -2,7 +2,4 @@
 
 
 // Declare app level module which depends on and services controllers
-var JArentalsApplication = angular.module('JArentalsApplication',[
-	'JArentalsApplication.services',
-	'JArentalsApplication.controllers'
-]);
+var JArentalsApplication = angular.module('JArentalsApplication',[]);

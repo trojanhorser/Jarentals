@@ -2,14 +2,10 @@
 
 /* Controllers */
 
-angular.module('JArentalsApplication.controllers',[]);
-/*.factory('Log',function(){
-	return {
-		retrieveUserDataFromFaceBook : function(){
-			return {
-				userid : "Denis",
-				password : "denis64bit"
-			}
-		}
+//angular.module('JArentalsApplication.controllers');
+JArentalsApplication.controller('LoginController',function AppController ($scope,FaceBookService){
+	
+	$scope.logout = function(){
+		FaceBookService.logout();
 	}
-});*/
+});

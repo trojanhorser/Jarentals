@@ -1,7 +1,7 @@
 'use strict';
 
 /* jasmine specs for filters go here */
-
+/*
 describe('filter', function() {
   beforeEach(module('myApp.filters'));
 
@@ -16,4 +16,4 @@ describe('filter', function() {
       expect(interpolateFilter('before %VERSION% after')).toEqual('before TEST_VER after');
     }));
   });
-});
+});*/
