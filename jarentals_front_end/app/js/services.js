@@ -8,7 +8,7 @@ JArentalsApplication.factory('UserService',function(FaceBookService){
 			return FaceBookService.retrieveUserData(username,password);
 		}
 	}
-}).factory('FaceBookService',function($rootScope){
+}).factory('FaceBookService',function($rootScope,$log){
 	return {
 		retrieveUserData : function(){
 			//return 'undefined';
@@ -26,8 +26,8 @@ JArentalsApplication.factory('UserService',function(FaceBookService){
 					 The user is already logged, 
 					 is possible retrieve his personal info
 					*/
-					_self.getUserInfo();
-
+					$log(_self.getUserInfo());
+					
 					/*
 					 This is also the point where you should create a 
 					 session for the current user.
