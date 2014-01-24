@@ -7,17 +7,15 @@
 </head>
 <body>
   
- <div ng-controller="LoginController">
-  <div id="fb-root"></div>
-  
-  <div data-face-book-login-button></div>
-  <!--
-  <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
-   -->
-   <input type="button" ng-click="logout()" value="logout"/>
- </div>
-  
-  
+   <div ng-controller="LoginController">
+		 <ul class="menu">
+		  <li><a href="#/login">login</a></li>
+		  <li><a href="#/main">main</a></li>
+		</ul>
+		<div ng-view></div>
+		<input type="button" ng-click="logout()" value="logout"/>
+   </div>
+
   <script src="js-fb-auth/fb-auth.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-route.js"></script>
