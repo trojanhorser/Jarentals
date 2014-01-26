@@ -2,7 +2,7 @@
 
 /* Directives */
 
-
+/*
 JArentalsApplication.
   directive('faceBookLoginButton',function(){
 	return {
@@ -14,3 +14,4 @@ JArentalsApplication.
       elm.text(version);
     };
   }]);
+*/
