@@ -2,9 +2,7 @@
 
 
 // Declare app level module which depends on and services controllers
-var JArentalsApplication = angular.module('JArentalsApplication',["ngRoute",'ezfb']);
-
-JArentalsApplication.run()
+var JArentalsApplication = angular.module('JArentalsApplication',["ngRoute","ezfb"]);
 
 JArentalsApplication.config(function($routeProvider,$FBProvider) {
   

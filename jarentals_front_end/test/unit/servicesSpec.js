@@ -1,7 +1,7 @@
 'use strict';
 
 /* jasmine specs for services go here */
-
+/*
 describe('service', function() {
   beforeEach(module('JArentalsApplication.services'));
   
@@ -32,15 +32,6 @@ describe('service', function() {
 			   
 			}));
 	  });
-	  
-	  //Testing for facebook service
-	  /*decribe('FaceBookService',function(){
-		it('it should return a user object when valid username and password is passed',function(){
-			
-			var username and
-		
-			var userData = FaceBookService.retrieveUserData()
-		});	
-	  });*/
   
 });
+*/
