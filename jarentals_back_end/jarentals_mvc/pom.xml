@@ -108,14 +108,22 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-	
+		
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency>        
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jarentals.domain</groupId>
+			<artifactId>domain</artifactId>
+			<version>1.0.0.CI-SNAPSHOT</version>
+			<scope>jarentals_domain</scope>
+		</dependency>
+		        
 	</dependencies>
     <build>
         <plugins>

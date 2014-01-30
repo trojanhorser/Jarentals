@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="jarental_domain (1)" project="jarental_domain" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.jarentals.domain.service.user.UserServiceTest" time="0.734">
+    <testcase name="testShouldThrowIllegalArgumentExceptionWhenUserParamtersIsNull" classname="com.jarentals.domain.service.user.UserServiceTest" time="0.733"/>
+  </testsuite>
+  <testsuite name="com.jarentals.domain.repository.UserRepositoryTest" time="0.09">
+    <testcase name="testAddUserReturnsAUserObject" classname="com.jarentals.domain.repository.UserRepositoryTest" time="0.09"/>
+  </testsuite>
+</testrun>
