@@ -1940,3 +1940,78 @@ Binding(ALT+SHIFT+ARROW_LEFT,
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:06:15.072
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:12:10.861
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:12:10.919
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:42:42.919
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:42:43.094
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:42:44.395
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:42:44.545
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:45:36.061
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:45:36.137
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:45:36.204
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:45:38.584
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:45:38.616
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:45:40.839
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:45:40.951
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:46:09.352
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-01-30 05:46:09.395
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-01-30 05:48:49.088
+!MESSAGE Error occurred computing diffs
+!STACK 0
+java.io.IOException: File not found: C:\TomCat\webapps\Jarentals\jarentals_back_end\jarental_domain\target\.gitignore.
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.openInputStream(ContainerTreeIterator.java:349)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$PerDirectoryIgnoreNode.load(WorkingTreeIterator.java:1035)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:600)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:574)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:561)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:184)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.include(AndTreeFilter.java:163)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:560)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:389)
+	at org.eclipse.egit.ui.internal.commit.CommitUI.buildIndexHeadDiffList(CommitUI.java:283)
+	at org.eclipse.egit.ui.internal.commit.CommitUI.access$0(CommitUI.java:264)
+	at org.eclipse.egit.ui.internal.commit.CommitUI$1.run(CommitUI.java:128)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.runtime.CoreException: File not found: C:\TomCat\webapps\Jarentals\jarentals_back_end\jarental_domain\target\.gitignore.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.egit.core.ContainerTreeIterator$ResourceEntry.openInputStream(ContainerTreeIterator.java:347)
+	... 12 more
+Caused by: java.io.FileNotFoundException: C:\TomCat\webapps\Jarentals\jarentals_back_end\jarental_domain\target\.gitignore (The system cannot find the path specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:368)
+	... 15 more

@@ -1461,3 +1461,56 @@
 2014-01-30 05:08:16,603 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
 2014-01-30 05:08:24,383 [Worker-72] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\TomCat\webapps\Jarentals\jarentals_back_end\jarentals_mvc
 2014-01-30 05:08:24,383 [Worker-72] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "C:\Users\Denis Bell\.m2\settings.xml" 
+2014-01-30 05:12:10,859 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:12:10,882 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:12:10,917 [Worker-81] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:12:10,935 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:42:35,816 [Worker-73] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2014-01-30 05:42:36,025 [Worker-73] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.jarentals:app:1.0.0-BUILD-SNAPSHOT @ C:\TomCat\webapps\Jarentals\jarentals_back_end\jarentals_mvc\pom.xml.
+2014-01-30 05:42:37,690 [Worker-73] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jarentals_mvc/src/main/java
+2014-01-30 05:42:37,691 [Worker-73] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /jarentals_mvc/src/main/resources overlaps with sources folder /jarentals_mvc/src/main/resources
+2014-01-30 05:42:37,719 [Worker-73] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jarentals_mvc/src/test/java
+2014-01-30 05:42:37,749 [Worker-73] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /jarentals_mvc/src/test/resources overlaps with sources folder /jarentals_mvc/src/test/resources
+2014-01-30 05:42:38,642 [Worker-73] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for jarentals_mvc
+2014-01-30 05:42:38,723 [Worker-73] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2014-01-30 05:42:40,735 [Worker-87] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.jarentals:app:1.0.0-BUILD-SNAPSHOT @ C:\TomCat\webapps\Jarentals\jarentals_back_end\jarentals_mvc\pom.xml.
+2014-01-30 05:42:42,885 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:42:42,995 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-01-30 05:42:43,063 [Worker-87] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:42:43,111 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-01-30 05:42:44,337 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:42:44,432 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:42:44,479 [Worker-73] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:42:44,594 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:42:50,334 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2014-01-30 05:43:00,011 [Worker-81] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\TomCat\webapps\Jarentals\jarentals_back_end\jarentals_mvc
+2014-01-30 05:43:00,012 [Worker-81] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "C:\Users\Denis Bell\.m2\settings.xml" 
+2014-01-30 05:45:06,938 [Worker-81] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\TomCat\webapps\Jarentals\jarentals_back_end\jarentals_mvc
+2014-01-30 05:45:06,979 [Worker-81] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "C:\Users\Denis Bell\.m2\settings.xml" clean
+2014-01-30 05:45:33,905 [Worker-88] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.jarentals:app:1.0.0-BUILD-SNAPSHOT @ C:\TomCat\webapps\Jarentals\jarentals_back_end\jarentals_mvc\pom.xml.
+2014-01-30 05:45:36,038 [Worker-88] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:45:36,079 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-01-30 05:45:36,115 [Worker-88] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:45:36,151 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2014-01-30 05:45:36,159 [Worker-88] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of jarentals_mvc
+2014-01-30 05:45:36,180 [Worker-88] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for jarentals_mvc
+2014-01-30 05:45:36,203 [Worker-88] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:45:37,782 [Worker-89] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jarentals.domain:domain:1.0.0.CI-SNAPSHOT @ C:\TomCat\webapps\Jarentals\jarentals_back_end\jarental_domain\pom.xml.
+2014-01-30 05:45:38,583 [Worker-89] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:45:38,610 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:45:38,615 [Worker-89] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:45:38,647 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:45:40,808 [Worker-89] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:45:40,865 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:45:40,870 [Worker-89] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:45:40,992 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:46:08,560 [Worker-88] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jarentals.domain:domain:1.0.0.CI-SNAPSHOT @ C:\TomCat\webapps\Jarentals\jarentals_back_end\jarental_domain\pom.xml.
+2014-01-30 05:46:09,325 [Worker-88] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:46:09,365 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:46:09,394 [Worker-88] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-01-30 05:46:09,407 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2014-01-30 05:46:42,843 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2014-01-30 05:46:48,735 [Worker-89] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\TomCat\webapps\Jarentals\jarentals_back_end\jarental_domain
+2014-01-30 05:46:48,735 [Worker-89] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "C:\Users\Denis Bell\.m2\settings.xml" clean
+2014-01-30 05:47:27,517 [Worker-89] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\TomCat\webapps\Jarentals\jarentals_back_end\jarentals_mvc
+2014-01-30 05:47:27,617 [Worker-89] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "C:\Users\Denis Bell\.m2\settings.xml" clean
