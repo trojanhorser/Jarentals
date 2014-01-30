@@ -1,0 +1,19 @@
+package com.jarentals.domain.service.user;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jarentals.domain.User;
+import com.jarentals.service.user.UserService;
+
+@Service
+public class UserService implements UserService {
+	
+	@Autowired
+    private SessionFactory session;
+	
+	public void addUser(User user) {
+	}
+
+}

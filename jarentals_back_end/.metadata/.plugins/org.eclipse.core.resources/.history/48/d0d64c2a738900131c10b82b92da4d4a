@@ -1,0 +1,9 @@
+package com.jarentals.domain.repository;
+
+import com.jarentals.domain.User;
+
+public interface UserRepository implements JPAR {
+	
+	public User addUser(User user);
+	
+}
