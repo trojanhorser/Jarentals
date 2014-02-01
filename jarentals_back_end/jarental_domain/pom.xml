@@ -9,12 +9,17 @@
 	<packaging>jar</packaging>
 	<name>jarentals_domain</name>
 	<url>http://maven.apache.org</url>
+	<parent>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-parent</artifactId>
+	    <version>1.0.0.RC1</version>
+	</parent>
 	<description>
 		<![CDATA[This project is a minimal jar utility with Spring configuration for JPA usage.]]>
 	</description>
 	<properties>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
-		<spring.framework.version>3.0.6.RELEASE</spring.framework.version>
+		<spring.framework.version>3.1.1.RELEASE</spring.framework.version>
 	</properties>
 	 
 	<dependencies>
@@ -61,6 +66,17 @@
 			<artifactId>spring-orm</artifactId>
 			<version>${spring.framework.version}</version>
 		</dependency>
+	  
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
@@ -116,7 +132,16 @@
 			</plugin>		 
 		</plugins>
 	</build>
-
+	<repositories>
+    <repository>
+        <id>spring-milestones</id>
+        <name>Spring Milestones</name>
+        <url>http://repo.spring.io/milestone</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+	</repositories>
  <!-- 	<pluginRepositories>
 		<pluginRepository>
 			<id>Codehaus</id>
