@@ -118,6 +118,13 @@
 		</dependency>
 		
 		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.3-1100-jdbc41</version>
+			<scope>compile</scope>
+		</dependency>
+	
+		<dependency>
 			<groupId>org.jarentals.domain</groupId>
 			<artifactId>domain</artifactId>
 			<version>1.0.0.CI-SNAPSHOT</version>

@@ -14,66 +14,68 @@ public class User {
 	private Long id;
 	
 	@Column
-	private String first_name;
+	private String firstname;
 	
 	@Column
-	private String last_name;
+	private String lastname;
 	
 	@Column
-	private Date created_when;
+	private Date createdwhen;
 	
 	@Column
-	private Date updated_when;
+	private Date updatedwhen;
 	
 	@Column
-	private String user_email;
+	private String useremail;
 
 	public Long getId() {
 		return id;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public Date getCreatedwhen() {
+		return createdwhen;
+	}
+
+	public void setCreatedwhen(Date createdwhen) {
+		this.createdwhen = createdwhen;
+	}
+
+	public Date getUpdatedwhen() {
+		return updatedwhen;
+	}
+
+	public void setUpdatedwhen(Date updatedwhen) {
+		this.updatedwhen = updatedwhen;
+	}
+
+	public String getUseremail() {
+		return useremail;
+	}
+
+	public void setUseremail(String useremail) {
+		this.useremail = useremail;
 	}
 
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public String getFirst_name() {
-		return first_name;
-	}
-
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
-	}
-
-	public String getLast_name() {
-		return last_name;
-	}
-
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
-	}
-
-	public Date getCreated_when() {
-		return created_when;
-	}
-
-	public void setCreated_when(Date created_when) {
-		this.created_when = created_when;
-	}
-
-	public Date getUpdated_when() {
-		return updated_when;
-	}
-
-	public void setUpdated_when(Date updated_when) {
-		this.updated_when = updated_when;
-	}
-
-	public String getUser_email() {
-		return user_email;
-	}
-
-	public void setUser_email(String user_email) {
-		this.user_email = user_email;
-	}
+	
 	
 }

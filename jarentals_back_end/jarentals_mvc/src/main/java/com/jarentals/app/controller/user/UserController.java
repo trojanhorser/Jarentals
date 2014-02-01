@@ -12,9 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.jarentals.app.HomeController;
-import com.jarentals.domain.User;
-import com.jarentals.domain.service.user.UserServiceImpl;
+import com.jarentals.domain.repository.UserRepository;
 import com.jarentals.test.SimpleUserRepository;
 
 @Controller

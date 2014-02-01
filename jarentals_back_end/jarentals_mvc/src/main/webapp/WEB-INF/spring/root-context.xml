@@ -6,7 +6,36 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/data/jpa
     http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
-    <bean name="simpleUserRepository"
-		class="com.jarentals.test.SimpleUserRepository" />
-    <jpa:repositories base-package="com.jarentals.test" />		
+  
+    <bean name="simpleUserRepository" class="com.jarentals.test.SimpleUserRepository" />
+    
+    <jpa:repositories base-package="com.jarentals.test" />	
+    <!-- 
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >
+		<property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url" value="jdbc:postgresql://ec2-54-197-241-96.compute-1.amazonaws.com:5432/den0fn31kvduvb" />
+		<property name="username" value="qaudllbiwxcxal" />
+		<property name="password" value="RHFs8eIgg1sDMDnTkQCekPFHlS" />
+	</bean>	
+	 -->
+	   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >
+		<property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url" value="jdbc:postgresql://localhost:5432/spring_hibernate" />
+		<property name="username" value="postgres" />
+		<property name="password" value="denis64bit" />
+	</bean>	
+	<bean id="vendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" >
+		<property name="generateDdl" value="true" />
+	</bean>	
+	
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" >
+		<property name="jpaVendorAdapter" ref="vendorAdapter" />
+		<property name="packagesToScan" value="com.jarentals.test" />
+		<property name="dataSource" ref="dataSource" />
+	</bean>	
+	 
+	
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager" >
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>	
 </beans>

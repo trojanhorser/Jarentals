@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 package com.jarentals.test;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.NamedQuery;
