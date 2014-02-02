@@ -1,3 +1,18 @@
+/*
+ * Copyright 2013-2014 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.jarentals.domain.repository;
 
 import java.util.List;
@@ -7,11 +22,26 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.jarentals.domain.User;
+import com.jarentals.domain.model.User;
 
+/**
+ * Simple repository interface for {@link User} instances. The interface is used to declare so called query methods,
+ * methods to retrieve single entities or collections of them.
+ * 
+ * @author Oliver Gierke
+ * @author Thomas Darimont
+ */
 @Repository
-public interface UserRepository extends  CrudRepository<User, Integer> {
-	
+public interface UserRepository extends CrudRepository<User, Long> {
+
+	/**
+	 * Find the user with the given username. This method will be translated into a query using the
+	 * {@link javax.persistence.NamedQuery} annotation at the {@link User} class.
+	 * 
+	 * @param lastname
+	 * @return
+	 */
+	//User findByUsername(String username);
 
 	/**
 	 * Find all users with the given lastname. This method will be translated into a query by constructing it directly

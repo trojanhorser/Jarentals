@@ -13,7 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.jarentals.test;
+package com.jarentals.domain.model;
+
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -28,15 +30,16 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
  * @author Thomas Darimont
  */
 @Entity
-@NamedQuery(name = "User.findByTheUsersName", query = "from User u where u.username = ?1")
 public class User extends AbstractPersistable<Long> {
 
 	private static final long serialVersionUID = -2952735933715107252L;
 
-	@Column(unique = true) private String username;
+	@Column(unique = true) private String useremail;
 
 	private String firstname;
 	private String lastname;
+	private Date createdwhen;
+	private Date updatedwhen;
 
 	public User() {
 		this(null);
@@ -49,22 +52,7 @@ public class User extends AbstractPersistable<Long> {
 		this.setId(id);
 	}
 
-	/**
-	 * Returns the username.
-	 * 
-	 * @return
-	 */
-	public String getUsername() {
-
-		return username;
-	}
-
-	/**
-	 * @param username the username to set
-	 */
-	public void setUsername(String username) {
-		this.username = username;
-	}
+	
 
 	/**
 	 * @return the firstname
@@ -93,4 +81,30 @@ public class User extends AbstractPersistable<Long> {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
+
+	public String getUseremail() {
+		return useremail;
+	}
+
+	public void setUseremail(String useremail) {
+		this.useremail = useremail;
+	}
+
+	public Date getCreatedwhen() {
+		return createdwhen;
+	}
+
+	public void setCreatedwhen(Date createdwhen) {
+		this.createdwhen = createdwhen;
+	}
+
+	public Date getUpdatedwhen() {
+		return updatedwhen;
+	}
+
+	public void setUpdatedwhen(Date updatedwhen) {
+		this.updatedwhen = updatedwhen;
+	}
+	
+	
 }

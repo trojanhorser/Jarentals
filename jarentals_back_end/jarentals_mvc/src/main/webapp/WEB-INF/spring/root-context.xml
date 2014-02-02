@@ -6,10 +6,12 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/data/jpa
     http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
-  
-    <bean name="simpleUserRepository" class="com.jarentals.test.SimpleUserRepository" />
+   
+   <!-- name must be the same as the class of spring-data-jpa will not know how to  -->
+    <bean name="userRepository" class="com.jarentals.domain.repository.UserRepository" />
     
-    <jpa:repositories base-package="com.jarentals.test" />	
+    <jpa:repositories base-package="com.jarentals.domain" />
+    
     <!-- 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" >
 		<property name="driverClassName" value="org.postgresql.Driver" />
@@ -24,17 +26,18 @@
 		<property name="username" value="postgres" />
 		<property name="password" value="denis64bit" />
 	</bean>	
+	
 	<bean id="vendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" >
 		<property name="generateDdl" value="true" />
 	</bean>	
 	
+	 <!--Entity manager packagesToScan attribute must point to the packages which contains the models  -->
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" >
 		<property name="jpaVendorAdapter" ref="vendorAdapter" />
-		<property name="packagesToScan" value="com.jarentals.test" />
+		<property name="packagesToScan" value="com.jarentals.domain.model" />
 		<property name="dataSource" ref="dataSource" />
 	</bean>	
 	 
-	
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager" >
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>	
