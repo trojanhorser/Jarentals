@@ -116,12 +116,6 @@
 	        <version>0.0.1-SNAPSHOT</version>
 	        <scope>compile</scope>
 	    </dependency>
-		
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.3-1100-jdbc41</version>
-		</dependency>
 	</dependencies>
 
 	<build>

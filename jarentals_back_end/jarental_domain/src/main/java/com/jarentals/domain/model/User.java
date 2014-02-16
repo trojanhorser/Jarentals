@@ -19,6 +19,7 @@ import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 
 import org.springframework.data.jpa.domain.AbstractPersistable;
@@ -33,7 +34,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 public class User extends AbstractPersistable<Long> {
 
 	private static final long serialVersionUID = -2952735933715107252L;
-
+	@Id
 	@Column(unique = true) private String useremail;
 
 	private String firstname;

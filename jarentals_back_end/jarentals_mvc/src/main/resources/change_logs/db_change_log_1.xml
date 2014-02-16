@@ -1,0 +1,25 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+	
+    <changeSet author="denisdbell (generated)" id="1392516838057-1">
+        <createTable tableName="User">
+            <column autoIncrement="true" name="id" type="MEDIUMINT(7)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="fb_id" type="VARCHAR(30)"/>
+            <column name="email" type="VARCHAR(30)"/>
+            <column name="username" type="VARCHAR(30)"/>
+            <column name="password" type="VARCHAR(30)"/>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="createdwhen" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="0000-00-00 00:00:00" name="updatedwhen" type="TIMESTAMP">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

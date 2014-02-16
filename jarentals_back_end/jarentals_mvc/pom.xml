@@ -116,21 +116,22 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
-		
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.3-1100-jdbc41</version>
-			<scope>compile</scope>
-		</dependency>
-	
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.28</version>
+		</dependency>  
 		<dependency>
 			<groupId>org.jarentals.domain</groupId>
 			<artifactId>domain</artifactId>
 			<version>1.0.0.CI-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
-		        
+		<dependency>
+			<groupId>org.liquibase</groupId>
+			<artifactId>liquibase-core</artifactId>
+			<version>3.1.1</version>
+		</dependency>      
 	</dependencies>
     <build>
         <plugins>

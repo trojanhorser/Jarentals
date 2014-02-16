@@ -7,13 +7,8 @@
     http://www.springframework.org/schema/data/jpa
     http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
    
-    <!-- SPRING DATA JPA -->
-    <import resource="beans/beans-spring-data-jpa.xml" />
-    
-    <!-- DATABASE CONFIGUARATION -->
-    <import resource="beans/beans-database.xml" />
-    
-    <!-- LIQUIBASE CONFIGUARATION -->
-    <import resource="beans/beans-liquibase.xml" />
-    
+   <!-- name must be the same as the class of spring-data-jpa will not know how to  -->
+    <bean name="userRepository" class="com.jarentals.domain.repository.UserRepository" /> 
+    <jpa:repositories base-package="com.jarentals.domain" />
+   
 </beans>
