@@ -1,11 +1,12 @@
 'use strict';
 
 /* Controllers */
-JArentalsApplication.controller('LoginController',function($scope,$FB, $window, $location){
+JArentalsApplication.controller('LoginController',function($scope,$FB, $window, $location,UserService){
 
   updateLoginStatus(updateApiMe);
-
+  
   $scope.login = function () {
+	
     $FB.login(function (res) {
       if (res.authResponse) {
         updateLoginStatus(updateApiMe);
