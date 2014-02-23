@@ -20,28 +20,39 @@ import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.NamedQuery;
-
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 /**
- * Sample user class.
+ * User class
  * 
- * @author Oliver Gierke
- * @author Thomas Darimont
+ * @author Denis Bell
+ *
  */
 @Entity
-public class User extends AbstractPersistable<Long> {
+public class User {
 
 	private static final long serialVersionUID = -2952735933715107252L;
 	@Id
-	@Column(unique = true) private String useremail;
-
-	private String firstname;
-	private String lastname;
-	private Date createdwhen;
-	private Date updatedwhen;
-
+	@Column(unique = true) private Long id;
+	
+	@Column
+	private String fb_id;
+	@Column
+	private String username;
+	@Column
+	private String password;
+	@Column
+	private String email;
+	@Column
+	private int role_id;
+	@Column
+	private Date created_when;
+	@Column
+	private Date updated_when;
+	@Column
+	private int user_status_id;
+	
+	
 	public User() {
 		this(null);
 	}
@@ -53,59 +64,79 @@ public class User extends AbstractPersistable<Long> {
 		this.setId(id);
 	}
 
-	
-
-	/**
-	 * @return the firstname
-	 */
-	public String getFirstname() {
-		return firstname;
+	public Long getId() {
+		return id;
 	}
 
-	/**
-	 * @param firstname the firstname to set
-	 */
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	/**
-	 * @return the lastname
-	 */
-	public String getLastname() {
-		return lastname;
+	public String getFb_id() {
+		return fb_id;
 	}
 
-	/**
-	 * @param lastname the lastname to set
-	 */
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setFb_id(String fb_id) {
+		this.fb_id = fb_id;
 	}
 
-	public String getUseremail() {
-		return useremail;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUseremail(String useremail) {
-		this.useremail = useremail;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
-	public Date getCreatedwhen() {
-		return createdwhen;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setCreatedwhen(Date createdwhen) {
-		this.createdwhen = createdwhen;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
-	public Date getUpdatedwhen() {
-		return updatedwhen;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setUpdatedwhen(Date updatedwhen) {
-		this.updatedwhen = updatedwhen;
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	
-	
+
+	public int getRole_id() {
+		return role_id;
+	}
+
+	public void setRole_id(int role_id) {
+		this.role_id = role_id;
+	}
+
+	public Date getCreated_when() {
+		return created_when;
+	}
+
+	public void setCreated_when(Date created_when) {
+		this.created_when = created_when;
+	}
+
+	public Date getUpdated_when() {
+		return updated_when;
+	}
+
+	public void setUpdated_when(Date updated_when) {
+		this.updated_when = updated_when;
+	}
+
+	public int getUser_status_id() {
+		return user_status_id;
+	}
+
+	public void setUser_status_id(int user_status_id) {
+		this.user_status_id = user_status_id;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
 }

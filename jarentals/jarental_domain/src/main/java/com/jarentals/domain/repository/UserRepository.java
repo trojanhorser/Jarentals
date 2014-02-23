@@ -50,7 +50,7 @@ public interface UserRepository extends CrudRepository<User, Long> {
 	 * @param lastname
 	 * @return
 	 */
-	List<User> findByLastname(String lastname);
+	//List<User> findByLastname(String lastname);
 
 	/**
 	 * Returns all users with the given firstname. This method will be translated into a query using the one declared in
@@ -59,8 +59,8 @@ public interface UserRepository extends CrudRepository<User, Long> {
 	 * @param firstname
 	 * @return
 	 */
-	@Query("select u from User u where u.firstname = ?")
-	List<User> findByFirstname(String firstname);
+	//@Query("select u from User u where u.firstname = ?")
+	//List<User> findByFirstname(String firstname);
 
 	/**
 	 * Returns all users with the given name as first- or lastname. Makes use of the {@link Param} annotation to use named
@@ -70,6 +70,6 @@ public interface UserRepository extends CrudRepository<User, Long> {
 	 * @param name
 	 * @return
 	 */
-	@Query("select u from User u where u.firstname = :name or u.lastname = :name")
-	List<User> findByFirstnameOrLastname(@Param("name") String name);
+	//@Query("select u from User u where u.firstname = :name or u.lastname = :name")
+	//List<User> findByFirstnameOrLastname(@Param("name") String name);
 }
