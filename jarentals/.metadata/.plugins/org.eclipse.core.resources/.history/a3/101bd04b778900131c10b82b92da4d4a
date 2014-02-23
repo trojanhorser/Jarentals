@@ -1,0 +1,15 @@
+package com.jarentals.common.util;
+
+import org.junit.Test;
+
+
+public class UtilTest {
+	
+	///Should throw illegal argument exception if any of the objects in the list is null
+	
+	@Test(expect=IllegalArgumentException.class)
+	public void testShouldThrowIllegalArgumentExceptionWhenParametersAreNull(){
+		Util.isEmpty()
+	}
+	
+}

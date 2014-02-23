@@ -1,0 +1,5 @@
+package com.jarentals.domain.service.user;
+
+public class UserServiceImpl implements UserService {
+
+}

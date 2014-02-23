@@ -1,0 +1,5 @@
+package com.jarentals.domain;
+
+public class UserRepositoryTest {
+
+}

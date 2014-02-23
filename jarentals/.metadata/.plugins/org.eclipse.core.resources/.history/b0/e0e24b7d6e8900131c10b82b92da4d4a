@@ -1,0 +1,22 @@
+package com.jarentals.domain;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class UserRepositoryTest {
+	
+	
+	
+	@Before
+	public void setUp(){
+		
+	}
+	
+
+	//Must return a User Object when executed
+	@Test 
+	public void testAddUserReturnsAUserObject(){
+		
+	}
+
+}

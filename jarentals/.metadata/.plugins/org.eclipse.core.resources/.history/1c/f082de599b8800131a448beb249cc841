@@ -1,0 +1,32 @@
+package com.jarentals.domain;
+
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+public class User {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long id;
+	
+	@Column
+	private String first_name;
+	
+	@Column
+	private String last_name;
+	
+	@Column
+	private Date created_when;
+	
+	@Column
+	private Date updated_when;
+	
+	@Column
+	private String user_email;
+	
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserServiceTest" project="jarental_domain" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.jarentals.domain.service.user.UserServiceTest" time="0.639">
+    <testcase name="testShouldThrowIllegalArgumentExceptionWhenUserParamtersIsNull" classname="com.jarentals.domain.service.user.UserServiceTest" time="0.639"/>
+  </testsuite>
+</testrun>

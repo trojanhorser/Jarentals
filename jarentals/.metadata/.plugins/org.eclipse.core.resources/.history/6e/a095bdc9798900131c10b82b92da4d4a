@@ -1,0 +1,20 @@
+package com.jarentals.common.util;
+
+public class Util {
+	
+	
+	
+	public static boolean isObjectEmpty(Object... objects){
+		
+		boolean result = false;
+		
+		for(Object obj : objects){
+			if(obj == null){
+				result = true;
+			}
+		}
+		
+		return result;
+	}
+	
+}

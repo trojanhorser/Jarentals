@@ -1,0 +1,8 @@
+package com.jarentals.service.user;
+
+import com.jarentals.domain.User;
+
+public class UserServiceTest {
+	
+	public void addUser(User user);
+}

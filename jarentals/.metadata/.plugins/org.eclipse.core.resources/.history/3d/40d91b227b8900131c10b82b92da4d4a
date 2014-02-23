@@ -1,0 +1,27 @@
+package com.jarentals.common.util;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+
+public class UtilTest {
+	
+	//Mock Data
+	private String data1 = null;
+	private Object data2 = null;
+	private Object data3 = new Object();
+	private String data4 = "";
+	
+	///Should return false if any of the objects in the list is null
+	@Test
+	public void testShouldReturnFalseIfAnyOfTheParametersAreNull(){
+		assertTrue(Util.isObjectEmpty(data1,data2,data3));
+	}
+	
+	///if object is a string and has no characters it should return false
+	@Test
+	public void testShouldReturnFalseIfEmptyStringIsParameter(){
+		assertTrue(Util.isObjectEmpty(data4));
+	}
+	
+}
