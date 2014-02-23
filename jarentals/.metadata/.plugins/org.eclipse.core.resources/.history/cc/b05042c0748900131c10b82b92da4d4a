@@ -1,0 +1,11 @@
+package com.jarentals.service.user;
+
+import com.jarentals.domain.User;
+
+public class UserServiceTest {
+	
+	//Should throw illegal argument exception when null values are pass
+	public void addUser(User user){
+		
+	}
+}

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Thu Jan 30 05:46:10 BOT 2014
+org.eclipse.jst.j2ee.server\:jarental_domain=WEB-INF/lib/domain-1.0.0.CI-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:jarentals_common=WEB-INF/lib/jarentals_common-0.0.1-SNAPSHOT.jar

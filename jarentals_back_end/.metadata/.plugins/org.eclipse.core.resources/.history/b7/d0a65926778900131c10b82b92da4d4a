@@ -1,0 +1,13 @@
+package com.jarentals.common.util;
+
+
+public class UtilTest {
+	
+	///Should throw illegal argument exception if any of the objects in the list is null
+	
+	@Test
+	public void testShouldThrowIllegalArgumentExceptionWhenParametersAreNull(){
+		
+	}
+	
+}

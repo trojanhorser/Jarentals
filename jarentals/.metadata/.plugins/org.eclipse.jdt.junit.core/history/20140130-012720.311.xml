@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserRepositoryTest" project="jarental_domain" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.jarentals.domain.UserRepositoryTest" time="0.792">
+    <testcase name="testAddUserReturnsAUserObject" classname="com.jarentals.domain.UserRepositoryTest" time="0.793"/>
+  </testsuite>
+</testrun>

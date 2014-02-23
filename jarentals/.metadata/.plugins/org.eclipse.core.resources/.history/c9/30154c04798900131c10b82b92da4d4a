@@ -1,0 +1,22 @@
+package com.jarentals.common.util;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+
+public class UtilTest {
+	
+	//Mock Data
+	private String data1 = null;
+	private Object data2 = null;
+	private Object data3 = new Object();
+	private String data4 = "";
+	
+	///Should throw illegal argument exception if any of the objects in the list is null
+	@Test
+	public void testShouldThrowIllegalArgumentExceptionWhenParametersAreNull(){
+		assertTrue(Util.isObjectEmpty(data1,data2));
+	}
+	
+}

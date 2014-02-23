@@ -1,0 +1,14 @@
+<template>
+	<descriptor id="org.springframework.samples.spring.jpa"
+		name="Simple Spring JPA Utility Project"
+		kind="template"
+		category="Persistence"
+		requiresbundle="org.eclipse.m2e.core"
+		version="2.4.2">
+		<description>
+			A simple jar project that has some Spring and JPA configuration and an integration test.   
+		</description>
+	</descriptor>
+	<project path="template.zip"/>
+	<json path="wizard.json"/>
+</template>

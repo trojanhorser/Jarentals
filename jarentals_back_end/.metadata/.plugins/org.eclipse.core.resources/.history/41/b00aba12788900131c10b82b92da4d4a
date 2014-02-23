@@ -1,0 +1,11 @@
+package com.jarentals.common.util;
+
+public class Util {
+	
+	
+	
+	public static isObjectEmpty(Object... obj){
+		
+	}
+	
+}

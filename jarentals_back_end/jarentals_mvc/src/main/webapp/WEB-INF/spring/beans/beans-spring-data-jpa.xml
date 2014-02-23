@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/data/jpa
+    http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+   
+   <!-- name must be the same as the class of spring-data-jpa will not know how to  -->
+    <bean name="userRepository" class="com.jarentals.domain.repository.UserRepository" /> 
+    <jpa:repositories base-package="com.jarentals.domain" />
+   
+</beans>

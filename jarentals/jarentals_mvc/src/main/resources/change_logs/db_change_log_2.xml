@@ -1,0 +1,166 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+	
+	<changeSet author="denisdbell" id="insert_default_values_in_role_priviledge_map">
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="100"/>
+	        <column name="priviledge_id" value="200"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="100"/>
+	        <column name="priviledge_id" value="201"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="100"/>
+	        <column name="priviledge_id" value="202"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="100"/>
+	        <column name="priviledge_id" value="203"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="100"/>
+	        <column name="priviledge_id" value="204"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="100"/>
+	        <column name="priviledge_id" value="205"/>
+	    </insert>
+	     <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="100"/>
+	        <column name="priviledge_id" value="206"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="101"/>
+	        <column name="priviledge_id" value="200"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="101"/>
+	        <column name="priviledge_id" value="202"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="101"/>
+	        <column name="priviledge_id" value="203"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="101"/>
+	        <column name="priviledge_id" value="204"/>
+	    </insert>
+	    <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="101"/>
+	        <column name="priviledge_id" value="205"/>
+	    </insert>
+	     <insert tableName="role_priviledge_map">
+	        <column name="role_id" value="101"/>
+	        <column name="priviledge_id" value="206"/>
+	    </insert>
+	</changeSet>
+	
+	<changeSet author="denisdbell" id="insert_default_values_in_role">
+	    <insert tableName="role">
+	        <column name="id" value="200"/>
+	        <column name="short_name" value="ADMIN"/>
+	        <column name="description" value="The admin user has all privilegdes"/>
+	    </insert>
+	    <insert tableName="role">
+	        <column name="id" value="201"/>
+	        <column name="short_name" value="USER"/>
+	        <column name="description" value="Has the privilede to perform CRUD on user and place"/>
+	    </insert>
+	</changeSet>
+
+	<changeSet author="denisdbell" id="insert_default_values_in_priviledge">
+	    <insert tableName="priviledge">
+	        <column name="id" value="300"/>
+	        <column name="short_name" value="ADD_USER"/>
+	        <column name="description" value="Add a user"/>
+	    </insert>
+	    <insert tableName="priviledge">
+	        <column name="id" value="301"/>
+	        <column name="short_name" value="REMOVE_USER"/>
+	        <column name="description" value="Remove a user"/>
+	    </insert>
+	    <insert tableName="priviledge">
+	        <column name="id" value="302"/>
+	        <column name="short_name" value="UPDATE_USER"/>
+	        <column name="description" value="Update a user"/>
+	    </insert>
+	     <insert tableName="priviledge">
+	        <column name="id" value="303"/>
+	        <column name="short_name" value="ADD_PLACE"/>
+	        <column name="description" value="Add a place"/>
+	    </insert>
+	     <insert tableName="priviledge">
+	        <column name="id" value="304"/>
+	        <column name="short_name" value="REMOVE_PLACE"/>
+	        <column name="description" value="Remove a place"/>
+	    </insert>
+	    <insert tableName="priviledge">
+	        <column name="id" value="305"/>
+	        <column name="short_name" value="UPDATE_PLACE"/>
+	        <column name="description" value="Update a place"/>
+	    </insert>
+	    <insert tableName="priviledge">
+	        <column name="id" value="306"/>
+	        <column name="short_name" value="CREDENTIAL_RECOVERY"/>
+	        <column name="description" value="password reset and username recovery"/>
+	    </insert>
+	</changeSet>
+    <changeSet author="denisdbell" id="insert_default_values_in_place_status">
+	    <insert tableName="place_status">
+	        <column name="id" value="400"/>
+	        <column name="short_name" value="AVAILABLE"/>
+	        <column name="description" value="lace is ready for viewing and not yet rented"/>
+	    </insert>
+	     <insert tableName="place_status">
+	        <column name="id" value="401"/>
+	        <column name="short_name" value="RENTED"/>
+	        <column name="description" value="Place is rented and no longer available"/>
+	    </insert>
+	</changeSet>
+
+	 <changeSet author="denisdbell" id="insert_default_values_in_contact_type">
+	    <insert tableName="contact_type">
+	        <column name="id" value="500"/>
+	        <column name="short_name" value="SKYPE"/>
+	        <column name="description" value="Skype name"/>
+	    </insert>
+	    <insert tableName="contact_type">
+	        <column name="id" value="501"/>
+	        <column name="short_name" value="FACEBOOK"/>
+	        <column name="description" value="Facebook homepage"/>
+	    </insert>
+	    <insert tableName="contact_type">
+	        <column name="id" value="502"/>
+	        <column name="short_name" value="HOME_NUMBER"/>
+	        <column name="description" value="Home phone number"/>
+	    </insert>
+	    <insert tableName="contact_type">
+	        <column name="id" value="503"/>
+	        <column name="short_name" value="EMAIL"/>
+	        <column name="description" value="Email address"/>
+	    </insert>
+	     <insert tableName="contact_type">
+	        <column name="id" value="504"/>
+	        <column name="short_name" value="MOBILE_NUMBER"/>
+	        <column name="description" value="Mobile number"/>
+	    </insert>
+	</changeSet>
+	
+	<changeSet author="denisdbell" id="insert_default_values_user_status">
+	    <insert tableName="user_status">
+	        <column name="id" value="600"/>
+	        <column name="short_name" value="ACTIVE"/>
+	        <column name="description" value="user is enabled"/>
+	    </insert>
+	     <insert tableName="user_status">
+	        <column name="id" value="601"/>
+	        <column name="short_name" value="INACTIVE"/>
+	        <column name="description" value="user is disabled"/>
+	    </insert>
+	</changeSet>
+</databaseChangeLog>

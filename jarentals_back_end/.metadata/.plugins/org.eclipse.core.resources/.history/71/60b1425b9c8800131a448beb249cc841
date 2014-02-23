@@ -1,0 +1,5 @@
+package com.jarentals.domain.repository;
+
+public interface UserRepository {
+
+}

@@ -1,0 +1,6 @@
+package com.jarentals.domain.service.user;
+
+public interface UserService {
+	
+	public addUser(User user);
+}

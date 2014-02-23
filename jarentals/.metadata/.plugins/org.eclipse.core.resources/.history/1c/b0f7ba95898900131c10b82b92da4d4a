@@ -1,0 +1,5 @@
+package com.jarentals.app.controller.user;
+
+public class UserController {
+
+}

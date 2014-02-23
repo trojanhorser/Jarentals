@@ -1,0 +1,33 @@
+package com.jarentals.service.user;
+
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import com.jarentals.domain.User;
+import com.jarentals.domain.repository.UserRepository;
+
+public class UserServiceTest {
+	
+	@Mock 
+	UserRepository userRepository;
+	
+	
+	@Before
+	public void setUp(){
+		
+		MockitoAnnotations.initMocks(this);
+	}
+	
+	
+	
+	//Should throw illegal argument exception when null values are passed
+	@Test
+	public void testShouldThrowIllegalArgumentExceptionWhenParamtersAreNull(){
+		
+	}
+	
+	public void addUser(User user){
+		userRepository = 
+	}
+}
