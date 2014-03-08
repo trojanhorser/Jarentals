@@ -6,6 +6,6 @@
  * */
 
 JArentalsApplication.constant('SERVICE_CONSTANTS',{
-    'SERVICE_CONTEXT_ROOT': ':8080/apps',
+    'SERVICE_CONTEXT_ROOT': ':8080/app',
 });
 

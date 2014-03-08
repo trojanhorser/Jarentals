@@ -10,7 +10,10 @@ import com.jarentals.domain.repository.UserRepository;
 public class UserServiceImpl implements UserService {
 
 	private UserRepository userRepository;
-		
+	
+	public UserServiceImpl() {
+	}
+	
 	public UserServiceImpl(UserRepository userRepository) {
 		super();
 		this.userRepository = userRepository;
