@@ -7,7 +7,6 @@ JArentalsApplication.controller('LoginController',function($scope,$FB, $window, 
   
   UserService.query({id:123});  
 	  
-  
   $scope.login = function () {
 	
     $FB.login(function (res) {

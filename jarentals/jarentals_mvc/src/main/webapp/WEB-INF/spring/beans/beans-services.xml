@@ -6,18 +6,6 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/data/jpa
     http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
-   
-    <!-- SPRING DATA JPA -->
-    <import resource="beans/beans-spring-data-jpa.xml" />
-    
-    <!-- DATABASE CONFIGUARATION -->
-    <import resource="beans/beans-database.xml" />
-    
-    <!-- LIQUIBASE CONFIGUARATION -->
-    <import resource="beans/beans-liquibase.xml" />
-    
-    
-    <!-- Services -->
-    <import resource="beans/beans-services.xml" />
-    
+  
+    <bean name="userService" class="com.jarentals.app.service.UserServiceImpl" /> 
 </beans>

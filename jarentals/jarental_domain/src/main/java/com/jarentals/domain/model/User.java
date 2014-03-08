@@ -20,6 +20,8 @@ import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 /**
@@ -29,28 +31,29 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
  *
  */
 @Entity
+@Table(name = "Users")
 public class User {
 
 	private static final long serialVersionUID = -2952735933715107252L;
 	@Id
-	@Column(unique = true) private Long id;
-	
 	@Column
-	private String fb_id;
+	private Long id;
+	@Column(name = "fb_id")
+	private String fbId;
 	@Column
 	private String username;
 	@Column
 	private String password;
 	@Column
 	private String email;
-	@Column
-	private int role_id;
-	@Column
-	private Date created_when;
-	@Column
-	private Date updated_when;
-	@Column
-	private int user_status_id;
+	@Column(name="role_id")
+	private int roleId;
+	@Column(name="created_when")
+	private Date createdWhen;
+	@Column(name="updated_when")
+	private Date updatedWhen;
+	@Column(name="user_status_id")
+	private int userStatusId;
 	
 	
 	public User() {
@@ -72,12 +75,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getFb_id() {
-		return fb_id;
+	public String getFbId() {
+		return fbId;
 	}
 
-	public void setFb_id(String fb_id) {
-		this.fb_id = fb_id;
+	public void setFbId(String fbId) {
+		this.fbId = fbId;
 	}
 
 	public String getUsername() {
@@ -104,39 +107,35 @@ public class User {
 		this.email = email;
 	}
 
-	public int getRole_id() {
-		return role_id;
+	public int getRoleId() {
+		return roleId;
 	}
 
-	public void setRole_id(int role_id) {
-		this.role_id = role_id;
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
 	}
 
-	public Date getCreated_when() {
-		return created_when;
+	public Date getCreatedWhen() {
+		return createdWhen;
 	}
 
-	public void setCreated_when(Date created_when) {
-		this.created_when = created_when;
+	public void setCreatedWhen(Date createdWhen) {
+		this.createdWhen = createdWhen;
 	}
 
-	public Date getUpdated_when() {
-		return updated_when;
+	public Date getUpdatedWhen() {
+		return updatedWhen;
 	}
 
-	public void setUpdated_when(Date updated_when) {
-		this.updated_when = updated_when;
+	public void setUpdatedWhen(Date updatedWhen) {
+		this.updatedWhen = updatedWhen;
 	}
 
-	public int getUser_status_id() {
-		return user_status_id;
+	public int getUserStatusId() {
+		return userStatusId;
 	}
 
-	public void setUser_status_id(int user_status_id) {
-		this.user_status_id = user_status_id;
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	public void setUserStatusId(int userStatusId) {
+		this.userStatusId = userStatusId;
 	}
 }

@@ -5,7 +5,7 @@
 var JArentalsApplication = angular.module('JArentalsApplication',["ngRoute","ezfb",'ngResource']);
 
 JArentalsApplication.config(function($routeProvider,$FBProvider) {
-  
+
   $routeProvider.when('/login', {templateUrl: 'partials/login.html', controller: 'LoginController'});
   $routeProvider.when('/main', {templateUrl: 'partials/main.html', controller: 'LoginController'});
   $routeProvider.otherwise({redirectTo: '/view1'});
@@ -15,4 +15,9 @@ JArentalsApplication.config(function($routeProvider,$FBProvider) {
     appId: '241686766004791'
   });
   
+});
+
+JArentalsApplication.run(function($rootScope,$location,SERVICE_CONSTANTS){
+    //Set service end point to current url
+    $rootScope.serviceEndPoint = $location.$$protocol + "://" + $location.$$host + SERVICE_CONSTANTS.SERVICE_CONTEXT_ROOT;
 });
