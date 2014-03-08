@@ -11,6 +11,11 @@ public class UserServiceImpl implements UserService {
 
 	private UserRepository userRepository;
 		
+	public UserServiceImpl(UserRepository userRepository) {
+		super();
+		this.userRepository = userRepository;
+	}
+
 	public User addUser(User user){
 		userRepository.save(user);
 		return user;
