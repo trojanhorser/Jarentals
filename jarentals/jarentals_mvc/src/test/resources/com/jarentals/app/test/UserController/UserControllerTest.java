@@ -5,6 +5,7 @@ import static org.mockito.Mockito.when;
 
 import org.junit.Before;
 import org.junit.Test;
+import static org.mockito.Mockito.*;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
@@ -40,5 +41,20 @@ public class UserControllerTest {
 		when(userService.getUserById(userId)).thenReturn(null);
 		ResponseEntity<User> response = userController.getUserByid(userId);
 		assertEquals(response.getStatusCode(),badHttpResponse.getStatusCode());
+	}
+	
+	@Test
+	public void testgetUserById_Should_Return_200_Response_When_User_Is_Found(){
+	    UserController userController = new UserController(userService);
+		when(userService.getUserById(userId)).thenReturn(user);
+		ResponseEntity<User> response = userController.getUserByid(userId);
+		assertEquals(response.getStatusCode(),goodHttpResponse.getStatusCode());
+	}
+	
+	@Test
+	public void testgetUserById_Should_Call_UserService_getUserById_Method(){
+	    UserController userController = new UserController(userService);
+		userController.getUserByid(userId);
+		verify(userService).getUserById(userId);	
 	}
 }
