@@ -4,9 +4,8 @@
     xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-    
-    <changeSet author="denisdbell (generated)" id="1392954928018-1">
-        <createTable tableName="address">
+   <changeSet author="denisdbell (generated)" id="1393463418934-1">
+        <createTable tableName="Address">
             <column autoIncrement="true" name="id" type="INT(10)">
                 <constraints primaryKey="true"/>
             </column>
@@ -20,8 +19,8 @@
             <column name="updated_when" type="VARCHAR(45)"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-2">
-        <createTable tableName="contact">
+    <changeSet author="denisdbell (generated)" id="1393463418934-2">
+        <createTable tableName="Contact">
             <column autoIncrement="true" name="id" type="INT(10)">
                 <constraints primaryKey="true"/>
             </column>
@@ -31,8 +30,8 @@
             <column name="updated_when" type="TIMESTAMP"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-3">
-        <createTable tableName="contact_type">
+    <changeSet author="denisdbell (generated)" id="1393463418934-3">
+        <createTable tableName="ContactType">
             <column name="id" type="INT(10)">
                 <constraints nullable="false"/>
             </column>
@@ -42,8 +41,8 @@
             <column name="updated_when" type="VARCHAR(45)"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-4">
-        <createTable tableName="place">
+    <changeSet author="denisdbell (generated)" id="1393463418934-4">
+        <createTable tableName="Place">
             <column autoIncrement="true" name="id" type="INT(10)">
                 <constraints primaryKey="true"/>
             </column>
@@ -55,8 +54,8 @@
             <column name="updated_when" type="datetime"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-5">
-        <createTable tableName="place_images">
+    <changeSet author="denisdbell (generated)" id="1393463418934-5">
+        <createTable tableName="PlaceImages">
             <column name="id" type="INT(10)">
                 <constraints nullable="false"/>
             </column>
@@ -66,8 +65,8 @@
             <column name="updated_when" type="VARCHAR(45)"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-6">
-        <createTable tableName="place_status">
+    <changeSet author="denisdbell (generated)" id="1393463418934-6">
+        <createTable tableName="PlaceStatus">
             <column name="id" type="INT(10)">
                 <constraints nullable="false"/>
             </column>
@@ -77,8 +76,8 @@
             <column name="updated_when" type="TIMESTAMP"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-7">
-        <createTable tableName="priviledge">
+    <changeSet author="denisdbell (generated)" id="1393463418934-7">
+        <createTable tableName="Priviledge">
             <column name="id" type="INT(10)">
                 <constraints nullable="false"/>
             </column>
@@ -88,8 +87,8 @@
             <column name="updated_when" type="TIMESTAMP"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-8">
-        <createTable tableName="role">
+    <changeSet author="denisdbell (generated)" id="1393463418934-8">
+        <createTable tableName="Role">
             <column name="id" type="INT(10)">
                 <constraints nullable="false"/>
             </column>
@@ -99,8 +98,8 @@
             <column name="updated_when" type="TIMESTAMP"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-9">
-        <createTable tableName="role_priviledge_map">
+    <changeSet author="denisdbell (generated)" id="1393463418934-9">
+        <createTable tableName="RolePriviledgeMap">
             <column autoIncrement="true" name="id" type="INT(10)">
                 <constraints primaryKey="true"/>
             </column>
@@ -110,8 +109,8 @@
             <column defaultValueComputed="CURRENT_TIMESTAMP" name="updated_when" type="TIMESTAMP"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-10">
-        <createTable tableName="user">
+    <changeSet author="denisdbell (generated)" id="1393463418934-10">
+        <createTable tableName="Users">
             <column autoIncrement="true" name="id" type="INT(10)">
                 <constraints primaryKey="true"/>
             </column>
@@ -125,8 +124,8 @@
             <column name="updated_when" type="VARCHAR(45)"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-11">
-        <createTable tableName="user_status">
+    <changeSet author="denisdbell (generated)" id="1393463418934-11">
+        <createTable tableName="UserStatus">
             <column name="id" type="INT(10)">
                 <constraints nullable="false"/>
             </column>
@@ -134,46 +133,46 @@
             <column name="description" type="VARCHAR(100)"/>
         </createTable>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-12">
-        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="contact_type"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-12">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="ContactType"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-13">
-        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="place_images"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-13">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="PlaceImages"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-14">
-        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="place_status"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-14">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="PlaceStatus"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-15">
-        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="priviledge"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-15">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="Priviledge"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-16">
-        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="role"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-16">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="Role"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-17">
-        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="user_status"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-17">
+        <addPrimaryKey columnNames="id" constraintName="PRIMARY" tableName="UserStatus"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-18">
-        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="user" constraintName="fk_User_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="role"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-18">
+        <addForeignKeyConstraint baseColumnNames="role_id" baseTableName="Users" constraintName="fk_User_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="Role"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-19">
-        <addForeignKeyConstraint baseColumnNames="contact_type_id" baseTableName="contact" constraintName="fk_contact_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="contact_type"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-19">
+        <addForeignKeyConstraint baseColumnNames="contact_type_id" baseTableName="Contact" constraintName="fk_contact_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="ContactType"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-20">
-        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="place" constraintName="fk_place_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-20">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="Place" constraintName="fk_place_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="Users"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-21">
-        <addForeignKeyConstraint baseColumnNames="place_status_id" baseTableName="place" constraintName="fk_place_2" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="place_status"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-21">
+        <addForeignKeyConstraint baseColumnNames="place_status_id" baseTableName="Place" constraintName="fk_place_2" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="PlaceStatus"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-22">
-        <addForeignKeyConstraint baseColumnNames="address_id" baseTableName="place" constraintName="fk_place_3" deferrable="false" initiallyDeferred="false" onDelete="CASCADE" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="address"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-22">
+        <addForeignKeyConstraint baseColumnNames="address_id" baseTableName="Place" constraintName="fk_place_3" deferrable="false" initiallyDeferred="false" onDelete="CASCADE" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="Address"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-23">
-        <addForeignKeyConstraint baseColumnNames="contact_id" baseTableName="place" constraintName="fk_place_4" deferrable="false" initiallyDeferred="false" onDelete="CASCADE" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="contact"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-23">
+        <addForeignKeyConstraint baseColumnNames="contact_id" baseTableName="Place" constraintName="fk_place_4" deferrable="false" initiallyDeferred="false" onDelete="CASCADE" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="Contact"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-24">
-        <addForeignKeyConstraint baseColumnNames="place_id" baseTableName="place_images" constraintName="fk_place_images_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="place"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-24">
+        <addForeignKeyConstraint baseColumnNames="place_id" baseTableName="PlaceImages" constraintName="fk_place_images_1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="Place"/>
     </changeSet>
-    <changeSet author="denisdbell (generated)" id="1392954928018-25">
-        <addForeignKeyConstraint baseColumnNames="user_status_id" baseTableName="user" constraintName="fk_user_2" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user_status"/>
+    <changeSet author="denisdbell (generated)" id="1393463418934-25">
+        <addForeignKeyConstraint baseColumnNames="user_status_id" baseTableName="Users" constraintName="fk_user_2" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="UserStatus"/>
     </changeSet>
 </databaseChangeLog>
