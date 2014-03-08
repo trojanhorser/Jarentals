@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.jarentals.app.service.UserServiceImpl;
+import com.jarentals.app.service.UserService;
 import com.jarentals.domain.model.User;
 
 
@@ -21,13 +21,19 @@ public class UserController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 	
-	private UserServiceImpl userService;
+	private UserService userService;
+	
+	public UserController() {
+	}
+	
+	public UserController(UserService userService) {
+		this.userService = userService;
+	}
 
 	@RequestMapping(value = "/user/{id}",method = RequestMethod.GET, produces={"application/json"})
-	public @ResponseBody ResponseEntity<User> getUser(@PathVariable("id") Long id) {
-		System.out.println("id ----------"+id);
+	public @ResponseBody ResponseEntity<User> getUserByid(@PathVariable("id") Long id) {
 		User user = null;
-		user = userService.getUser(id);
+		user = userService.getUserById(id);
 		if(user!=null){
 			return new ResponseEntity<User>(user,HttpStatus.OK);
 		}else{
@@ -36,7 +42,7 @@ public class UserController {
 	}
 
 	@Autowired
-	public void setUserService(UserServiceImpl userService) {
+	public void setUserService(UserService userService) {
 		this.userService = userService;
 	}	
 }
