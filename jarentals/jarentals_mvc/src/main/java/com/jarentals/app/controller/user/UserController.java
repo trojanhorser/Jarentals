@@ -19,12 +19,13 @@ import com.jarentals.domain.model.User;
 @Controller
 public class UserController {
 	
-private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 	
 	private UserServiceImpl userService;
 
 	@RequestMapping(value = "/user/{id}",method = RequestMethod.GET, produces={"application/json"})
 	public @ResponseBody ResponseEntity<User> getUser(@PathVariable("id") Long id) {
+		System.out.println("id ----------"+id);
 		User user = null;
 		user = userService.getUser(id);
 		if(user!=null){
