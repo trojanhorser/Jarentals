@@ -35,8 +35,12 @@ public class UserControllerTest {
 		 userId = new Long(1);
 	}
 	
+	
+	/*
+	 * Tests for getUserById method
+	 */
 	@Test
-	public void testgetUserById_Should_Return_400_Response_When_User_Is_Not_Found(){
+	public void testGetUserById_Should_Return_400_Response_When_User_Is_Not_Found(){
 	    UserController userController = new UserController(userService);
 		when(userService.getUserById(userId)).thenReturn(null);
 		ResponseEntity<User> response = userController.getUserByid(userId);
@@ -44,7 +48,7 @@ public class UserControllerTest {
 	}
 	
 	@Test
-	public void testgetUserById_Should_Return_200_Response_When_User_Is_Found(){
+	public void testGetUserById_Should_Return_200_Response_When_User_Is_Found(){
 	    UserController userController = new UserController(userService);
 		when(userService.getUserById(userId)).thenReturn(user);
 		ResponseEntity<User> response = userController.getUserByid(userId);
@@ -52,9 +56,35 @@ public class UserControllerTest {
 	}
 	
 	@Test
-	public void testgetUserById_Should_Call_UserService_getUserById_Method(){
+	public void testGetUserById_Should_Call_UserService_getUserById_Method(){
 	    UserController userController = new UserController(userService);
 		userController.getUserByid(userId);
 		verify(userService).getUserById(userId);	
+	}
+	
+	/*
+	 * Tests for addUser method
+	 */
+	@Test
+	public void testAddUser_Should_Return_400_Response_When_User_Is_Not_Saved(){
+	    UserController userController = new UserController(userService);
+		when(userService.addUser(user)).thenReturn(null);
+		ResponseEntity<User> response = userController.addUser(user);
+		assertEquals(response.getStatusCode(),badHttpResponse.getStatusCode());
+	}
+	
+	@Test
+	public void testAddUser_Should_Return_200_Response_When_User_Is_Successfullty_Saved(){
+		UserController userController = new UserController(userService);
+		when(userService.addUser(user)).thenReturn(user);
+		ResponseEntity<User> response = userController.addUser(user);
+		assertEquals(response.getStatusCode(),goodHttpResponse.getStatusCode());
+	}
+	
+	@Test
+	public void testAddUser_Should_Call_UserService_addUser_Method(){
+	    UserController userController = new UserController(userService);
+		userController.addUser(user);
+		verify(userService).addUser(user);	
 	}
 }

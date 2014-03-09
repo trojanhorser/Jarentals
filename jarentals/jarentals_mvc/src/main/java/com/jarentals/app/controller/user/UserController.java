@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -40,9 +41,19 @@ public class UserController {
 			return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
 		}
 	}
-
+	
+	@RequestMapping(value = "/user",method = RequestMethod.POST, produces={"application/json"})
+	public ResponseEntity<User> addUser(@RequestBody User user) {
+		User newUser = userService.addUser(user);
+		if(newUser!=null){
+			return new ResponseEntity<User>(user,HttpStatus.OK);
+		}else{
+			return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+		}
+	}	
+	
 	@Autowired
 	public void setUserService(UserService userService) {
 		this.userService = userService;
-	}	
+	}
 }
