@@ -1,0 +1,293 @@
+Script started on Sun 09 Mar 2014 12:44:40 PM EDT
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ cd scripts/
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/main/scriptsdenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main/scripts$ ls
+e2e-test.bat  test-all.sh  test.sh            watchr.rb
+e2e-test.sh   test.bat     update-angular.sh  web-server.js
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/main/scriptsdenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main/scripts$ cd..
+cd..: command not found
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/main/scriptsdenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main/scripts$ c[Kls
+e2e-test.bat  test-all.sh  test.sh            watchr.rb
+e2e-test.sh   test.bat     update-angular.sh  web-server.js
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/main/scriptsdenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main/scripts$ cd ..
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m  LICENSE  [01;34mlogs[0m  package.json  README.md  [01;34mscripts[0m  [01;34mtest[0m  typescript
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ test.sh [1@/[1@s[1@c[1@r[1@i[1@p[1@t[1@s[C[1@s[1@h[1@ 
+
+Starting Karma Server (http://karma-runner.github.io)
+-------------------------------------------------------------------
+scripts/test.sh: 9: scripts/test.sh: scripts/../node_modules/karma/bin/karma: not found
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ npm install -g karma
+The program 'npm' is currently not installed.  You can install it by typing:
+sudo apt-get install npm
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ node
+The program 'node' can be found in the following packages:
+ * node
+ * nodejs
+Try: sudo apt-get install <selected package>
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ sudo a[K[K apt get insta[K[K[K[K[K[K[K[K[K[K-get insta; [K[Kll node
+[sudo] password for denisdbell: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-ubuntuoneui-3.0 libhunspell-1.3-0:i386 libubuntuoneui-3.0-1
+  thunderbird-globalmenu libxerces-c3.1:i386
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  libax25 openbsd-inetd
+The following NEW packages will be installed:
+  libax25 node openbsd-inetd
+0 upgraded, 3 newly installed, 0 to remove and 44 not upgraded.
+Need to get 113 kB of archives.
+After this operation, 623 kB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+0% [Working]            0% [Connecting to us.archive.ubuntu.com]0% [Connecting to us.archive.ubuntu.com]                                        0% [Waiting for headers]                        Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/universe libax25 amd64 0.0.11-6.1 [26.3 kB]
+                        2% [1 libax25 2,573 B/26.3 kB 10%]                                  23% [Waiting for headers]                         Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/main openbsd-inetd amd64 0.20091229-1ubuntu1 [30.8 kB]
+                         24% [2 openbsd-inetd 471 B/30.8 kB 2%]                                      50% [Working]             Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/universe node amd64 0.3.2-7.1 [56.1 kB]
+             51% [3 node 1,033 B/56.1 kB 2%]                               100% [Working]              Fetched 113 kB in 2s (47.2 kB/s)
+Selecting previously unselected package libax25.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 187970 files and directories currently installed.)
+Unpacking libax25 (from .../libax25_0.0.11-6.1_amd64.deb) ...
+Selecting previously unselected package openbsd-inetd.
+Unpacking openbsd-inetd (from .../openbsd-inetd_0.20091229-1ubuntu1_amd64.deb) ...
+Selecting previously unselected package node.
+Unpacking node (from .../node_0.3.2-7.1_amd64.deb) ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+Setting up libax25 (0.0.11-6.1) ...
+Setting up openbsd-inetd (0.20091229-1ubuntu1) ...
+ * Stopping internet superserver inetd       [80G [74G[ OK ]
+ * Not starting internet superserver: no services enabled
+Setting up node (0.3.2-7.1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ sudo apt-get install node[C[C[C[C[C[C[Cnode[Ksudo apt-get install node[C[C[C[C[C[C[Cnode[Kpm install -g karma[C[C[C[C[C[C[C[1Psh scripts/test.sh [C[C[C[C[C[C[Cnpm install -g karma
+The program 'npm' is currently not installed.  You can install it by typing:
+sudo apt-get install npm
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ npm install -g karma[K[K[K[K[C[C[C[C[C[C[C[Knpm install -g k[C[C[C[C[C[C[Csudo apt-get install node[C[C[C[C[C[C[Cnode[Kpm install -g karma[C[C[C[C[C[C[C[Code[Ksudo apt-get install node[K[K[K[Knpm
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-ubuntuoneui-3.0 libax25 libhunspell-1.3-0:i386 libubuntuoneui-3.0-1
+  thunderbird-globalmenu libxerces-c3.1:i386 openbsd-inetd
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  javascript-common libc-ares-dev libc-ares2 libev-dev libev4 libssl-dev
+  libssl-doc libv8-3.7.12.22 libv8-dev node-abbrev node-block-stream
+  node-fstream node-graceful-fs node-inherits node-ini node-lru-cache
+  node-minimatch node-mkdirp node-node-uuid node-nopt node-request node-rimraf
+  node-semver node-tar node-which nodejs nodejs-dev wwwconfig-common
+  zlib1g-dev
+The following packages will be REMOVED:
+  node
+The following NEW packages will be installed:
+  javascript-common libc-ares-dev libc-ares2 libev-dev libev4 libssl-dev
+  libssl-doc libv8-3.7.12.22 libv8-dev node-abbrev node-block-stream
+  node-fstream node-graceful-fs node-inherits node-ini node-lru-cache
+  node-minimatch node-mkdirp node-node-uuid node-nopt node-request node-rimraf
+  node-semver node-tar node-which nodejs nodejs-dev npm wwwconfig-common
+  zlib1g-dev
+0 upgraded, 30 newly installed, 1 to remove and 44 not upgraded.
+Need to get 5,804 kB of archives.
+After this operation, 18.1 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+0% [Working]            0% [Connecting to us.archive.ubuntu.com (91.189.91.15)]0% [Connecting to us.archive.ubuntu.com (91.189.91.15)]                                                       0% [Waiting for headers]                        Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/main libc-ares2 amd64 1.7.5-1 [36.6 kB]
+                        0% [1 libc-ares2 2,573 B/36.6 kB 7%]                                    1% [Waiting for headers]                        Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/universe wwwconfig-common all 0.2.2 [18.0 kB]
+                        1% [2 wwwconfig-common 3,125 B/18.0 kB 17%]                                           1% [Working]            Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/universe javascript-common all 8 [4,208 B]
+            1% [3 javascript-common 3,536 B/4,208 B 84%]                                            1% [Working]            Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/main zlib1g-dev amd64 1:1.2.3.4.dfsg-3ubuntu4 [165 kB]
+            1% [4 zlib1g-dev 1,900 B/165 kB 1%]                                   2% [4 zlib1g-dev 76.8 kB/165 kB 46%]2% [4 zlib1g-dev 76.8 kB/165 kB 46%]                                    4% [Working]            Get:5 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl-dev amd64 1.0.1-4ubuntu5.11 [1,574 kB]
+            4% [5 libssl-dev 0 B/1,574 kB 0%]                                 5% [5 libssl-dev 88.2 kB/1,574 kB 6%]5% [5 libssl-dev 88.2 kB/1,574 kB 6%]                                     6% [5 libssl-dev 149 kB/1,574 kB 9%]6% [5 libssl-dev 149 kB/1,574 kB 9%]6% [5 libssl-dev 149 kB/1,574 kB 9%]                                    9% [5 libssl-dev 278 kB/1,574 kB 18%]                         81.2 kB/s 1min 5s11% [5 libssl-dev 386 kB/1,574 kB 25%]                        81.2 kB/s 1min 3s12% [5 libssl-dev 444 kB/1,574 kB 28%]                        81.2 kB/s 1min 3s13% [5 libssl-dev 502 kB/1,574 kB 32%]                        81.2 kB/s 1min 2s16% [5 libssl-dev 696 kB/1,574 kB 44%]                            81.2 kB/s 60s18% [5 libssl-dev 826 kB/1,574 kB 52%]                            81.2 kB/s 58s18% [5 libssl-dev 826 kB/1,574 kB 52%]                            81.2 kB/s 58s20% [5 libssl-dev 955 kB/1,574 kB 61%]                            81.2 kB/s 56s21% [5 libssl-dev 1,020 kB/1,574 kB 65%]                          81.2 kB/s 56s24% [5 libssl-dev 1,150 kB/1,574 kB 73%]                          81.2 kB/s 54s26% [5 libssl-dev 1,305 kB/1,574 kB 83%]                          81.2 kB/s 52s28% [5 libssl-dev 1,397 kB/1,574 kB 89%]                          81.2 kB/s 51s30% [5 libssl-dev 1,538 kB/1,574 kB 98%]                           210 kB/s 19s31% [Waiting for headers]                                          210 kB/s 19s                                                                               Get:6 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl-doc all 1.0.1-4ubuntu5.11 [1,034 kB]
+31% [6 libssl-doc 3,949 B/1,034 kB 0%]                             210 kB/s 19s33% [6 libssl-doc 116 kB/1,034 kB 11%]                             210 kB/s 18s39% [6 libssl-doc 453 kB/1,034 kB 44%]                             210 kB/s 16s40% [6 libssl-doc 547 kB/1,034 kB 53%]                             210 kB/s 16s42% [6 libssl-doc 655 kB/1,034 kB 63%]                             210 kB/s 15s44% [6 libssl-doc 741 kB/1,034 kB 72%]                             210 kB/s 15s46% [6 libssl-doc 852 kB/1,034 kB 82%]                             210 kB/s 15s47% [6 libssl-doc 936 kB/1,034 kB 90%]                             210 kB/s 14s49% [Working]                                                      210 kB/s 14s                                                                               Get:7 http://us.archive.ubuntu.com/ubuntu/ precise/universe libv8-3.7.12.22 amd64 3.7.12.22-3 [1,369 kB]
+49% [7 libv8-3.7.12.22 189 B/1,369 kB 0%]                          210 kB/s 14s49% [7 libv8-3.7.12.22 14.6 kB/1,369 kB 1%]                        210 kB/s 14s51% [7 libv8-3.7.12.22 130 kB/1,369 kB 9%]                         210 kB/s 13s51% [7 libv8-3.7.12.22 130 kB/1,369 kB 9%]                         210 kB/s 13s53% [7 libv8-3.7.12.22 225 kB/1,369 kB 16%]                        215 kB/s 12s53% [7 libv8-3.7.12.22 225 kB/1,369 kB 16%]                        215 kB/s 12s55% [7 libv8-3.7.12.22 343 kB/1,369 kB 25%]                        215 kB/s 12s57% [7 libv8-3.7.12.22 462 kB/1,369 kB 34%]                        215 kB/s 11s63% [7 libv8-3.7.12.22 795 kB/1,369 kB 58%]                        215 kB/s 10s66% [7 libv8-3.7.12.22 1,024 kB/1,369 kB 75%]                       215 kB/s 9s70% [7 libv8-3.7.12.22 1,227 kB/1,369 kB 90%]                       215 kB/s 8s72% [Working]                                                       215 kB/s 7s                                                                               Get:8 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-node-uuid all 1.2.0~20110510-2 [6,216 B]
+72% [8 node-node-uuid 3,474 B/6,216 B 56%]                          215 kB/s 7s73% [Working]                                                       215 kB/s 7s                                                                               Get:9 http://us.archive.ubuntu.com/ubuntu/ precise/main libc-ares-dev amd64 1.7.5-1 [99.4 kB]
+73% [9 libc-ares-dev 1,271 B/99.4 kB 1%]                            215 kB/s 7s74% [Working]                                                       215 kB/s 6s                                                                               Get:10 http://us.archive.ubuntu.com/ubuntu/ precise/universe libev4 amd64 1:4.11-1 [29.0 kB]
+74% [10 libev4 3,570 B/29.0 kB 12%]                                 215 kB/s 6s75% [10 libev4 20.9 kB/29.0 kB 72%]                                 215 kB/s 6s75% [Working]                                                       215 kB/s 6s                                                                               Get:11 http://us.archive.ubuntu.com/ubuntu/ precise/universe libev-dev amd64 1:4.11-1 [120 kB]
+75% [11 libev-dev 4,320 B/120 kB 4%]                                215 kB/s 6s77% [Working]                                                       215 kB/s 6s                                                                               Get:12 http://us.archive.ubuntu.com/ubuntu/ precise/universe libv8-dev amd64 3.7.12.22-3 [61.5 kB]
+77% [12 libv8-dev 2,218 B/61.5 kB 4%]                               215 kB/s 6s78% [Waiting for headers]                                           215 kB/s 5s                                                                               Get:13 http://us.archive.ubuntu.com/ubuntu/ precise/universe nodejs amd64 0.6.12~dfsg1-1ubuntu1 [664 kB]
+78% [13 nodejs 3,960 B/664 kB 1%]                                   215 kB/s 5s81% [13 nodejs 206 kB/664 kB 31%]                                   215 kB/s 5s84% [13 nodejs 335 kB/664 kB 50%]                                   215 kB/s 4s86% [13 nodejs 465 kB/664 kB 70%]                                   215 kB/s 3s89% [Working]                                                       215 kB/s 2s                                                                               Get:14 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-abbrev all 1.0.3-1 [3,430 B]
+89% [14 node-abbrev 3,238 B/3,430 B 94%]                            215 kB/s 2s89% [Working]                                                       215 kB/s 2s                                                                               Get:15 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-inherits all 0.1-1 [2,656 B]
+89% [15 node-inherits 944 B/2,656 B 36%]                            215 kB/s 2s89% [Working]                                                       215 kB/s 2s                                                                               Get:16 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-block-stream all 0.0.5-1 [4,620 B]
+89% [16 node-block-stream 0 B/4,620 B 0%]                           215 kB/s 2s89% [Working]                                                       215 kB/s 2s                                                                               Get:17 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-rimraf all 2.0.1-1 [3,802 B]
+89% [17 node-rimraf 259 B/3,802 B 7%]                               215 kB/s 2s90% [Working]                                                       215 kB/s 2s                                                                               Get:18 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-mkdirp all 0.3.1-2 [3,716 B]
+90% [18 node-mkdirp 473 B/3,716 B 13%]                              215 kB/s 2s90% [Working]                                                       215 kB/s 2s                                                                               Get:19 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-graceful-fs all 1.1.8-1 [4,848 B]
+90% [19 node-graceful-fs 772 B/4,848 B 16%]                         215 kB/s 2s90% [Working]                                                       215 kB/s 2s                                                                               Get:20 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-fstream all 0.1.13-1 [31.7 kB]
+90% [20 node-fstream 1,134 B/31.7 kB 4%]                            215 kB/s 2s90% [Working]                                                       363 kB/s 1s                                                                               Get:21 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-ini all 1.0.2-1 [4,058 B]
+90% [21 node-ini 850 B/4,058 B 21%]                                 363 kB/s 1s90% [Working]                                                       363 kB/s 1s                                                                               Get:22 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-lru-cache all 1.0.5-1 [3,240 B]
+90% [22 node-lru-cache 808 B/3,240 B 25%]                           363 kB/s 1s90% [Working]                                                       363 kB/s 1s                                                                               Get:23 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-minimatch all 0.2.0-1 [14.0 kB]
+90% [23 node-minimatch 1,134 B/14.0 kB 8%]                          363 kB/s 1s91% [Working]                                                       363 kB/s 1s91% [Waiting for headers]                                           363 kB/s 1s91% [Waiting for headers]                                           363 kB/s 1s                                                                               Get:24 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-nopt all 1.0.10-1 [10.8 kB]
+91% [24 node-nopt 1,134 B/10.8 kB 11%]                              363 kB/s 1s91% [24 node-nopt 6,894 B/10.8 kB 64%]                              363 kB/s 1s91% [Working]                                                       363 kB/s 1s                                                                               Get:25 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-request all 2.9.153-1 [19.9 kB]
+91% [25 node-request 0 B/19.9 kB 0%]                                363 kB/s 1s91% [25 node-request 17.4 kB/19.9 kB 88%]                           363 kB/s 1s91% [Working]                                                       363 kB/s 1s                                                                               Get:26 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-semver all 1.0.13-1 [9,388 B]
+91% [26 node-semver 1,563 B/9,388 B 17%]                            363 kB/s 1s91% [Working]                                                       363 kB/s 1s                                                                               Get:27 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-tar all 0.1.13-1 [18.2 kB]
+91% [27 node-tar 509 B/18.2 kB 3%]                                  363 kB/s 1s92% [Waiting for headers]                                           363 kB/s 1s                                                                               Get:28 http://us.archive.ubuntu.com/ubuntu/ precise/universe node-which all 1.0.5-1 [3,582 B]
+92% [28 node-which 0 B/3,582 B 0%]                                  363 kB/s 1s92% [28 node-which 2,632 B/3,582 B 73%]                             363 kB/s 1s92% [Working]                                                       363 kB/s 1s                                                                               Get:29 http://us.archive.ubuntu.com/ubuntu/ precise/universe nodejs-dev amd64 0.6.12~dfsg1-1ubuntu1 [148 kB]
+92% [29 nodejs-dev 4,502 B/148 kB 3%]                               363 kB/s 1s92% [29 nodejs-dev 29.0 kB/148 kB 20%]                              363 kB/s 1s93% [29 nodejs-dev 83.7 kB/148 kB 57%]                              363 kB/s 1s93% [29 nodejs-dev 105 kB/148 kB 71%]                               363 kB/s 1s93% [29 nodejs-dev 105 kB/148 kB 71%]                               363 kB/s 1s93% [29 nodejs-dev 105 kB/148 kB 71%]                             30.2 kB/s 12s94% [29 nodejs-dev 128 kB/148 kB 87%]                             30.2 kB/s 11s94% [29 nodejs-dev 128 kB/148 kB 87%]                             30.2 kB/s 11s94% [29 nodejs-dev 128 kB/148 kB 87%]                             30.2 kB/s 11s94% [29 nodejs-dev 140 kB/148 kB 95%]                             30.2 kB/s 11s94% [Waiting for headers]                                         30.2 kB/s 11s                                                                               Get:30 http://us.archive.ubuntu.com/ubuntu/ precise/universe npm all 1.1.4~dfsg-1 [337 kB]
+94% [30 npm 1,958 B/337 kB 1%]                                    30.2 kB/s 11s95% [30 npm 57.5 kB/337 kB 17%]                                    30.2 kB/s 9s96% [30 npm 102 kB/337 kB 30%]                                     30.2 kB/s 7s97% [30 npm 171 kB/337 kB 51%]                                     30.2 kB/s 5s98% [30 npm 235 kB/337 kB 70%]                                     30.2 kB/s 3s99% [30 npm 263 kB/337 kB 78%]                                     30.2 kB/s 2s99% [30 npm 263 kB/337 kB 78%]                                     30.2 kB/s 2s99% [30 npm 271 kB/337 kB 80%]                                     30.2 kB/s 2s99% [30 npm 271 kB/337 kB 80%]                                     48.2 kB/s 1s99% [30 npm 276 kB/337 kB 82%]                                     48.2 kB/s 1s99% [30 npm 276 kB/337 kB 82%]                                     48.2 kB/s 1s99% [30 npm 284 kB/337 kB 84%]                                     48.2 kB/s 1s99% [30 npm 292 kB/337 kB 87%]                                     48.2 kB/s 0s100% [30 npm 314 kB/337 kB 93%]                                    48.2 kB/s 0s100% [Working]                                                     48.2 kB/s 0s                                                                               Fetched 5,804 kB in 39s (146 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 188035 files and directories currently installed.)
+Removing node ...
+Processing triggers for man-db ...
+Selecting previously unselected package libc-ares2.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 188000 files and directories currently installed.)
+Unpacking libc-ares2 (from .../libc-ares2_1.7.5-1_amd64.deb) ...
+Selecting previously unselected package wwwconfig-common.
+Unpacking wwwconfig-common (from .../wwwconfig-common_0.2.2_all.deb) ...
+Selecting previously unselected package javascript-common.
+Unpacking javascript-common (from .../javascript-common_8_all.deb) ...
+Selecting previously unselected package zlib1g-dev.
+Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.4.dfsg-3ubuntu4_amd64.deb) ...
+Selecting previously unselected package libssl-dev.
+Unpacking libssl-dev (from .../libssl-dev_1.0.1-4ubuntu5.11_amd64.deb) ...
+Selecting previously unselected package libssl-doc.
+Unpacking libssl-doc (from .../libssl-doc_1.0.1-4ubuntu5.11_all.deb) ...
+Selecting previously unselected package libv8-3.7.12.22.
+Unpacking libv8-3.7.12.22 (from .../libv8-3.7.12.22_3.7.12.22-3_amd64.deb) ...
+Selecting previously unselected package node-node-uuid.
+Unpacking node-node-uuid (from .../node-node-uuid_1.2.0~20110510-2_all.deb) ...
+Selecting previously unselected package libc-ares-dev.
+Unpacking libc-ares-dev (from .../libc-ares-dev_1.7.5-1_amd64.deb) ...
+Selecting previously unselected package libev4.
+Unpacking libev4 (from .../libev4_1%3a4.11-1_amd64.deb) ...
+Selecting previously unselected package libev-dev.
+Unpacking libev-dev (from .../libev-dev_1%3a4.11-1_amd64.deb) ...
+Selecting previously unselected package libv8-dev.
+Unpacking libv8-dev (from .../libv8-dev_3.7.12.22-3_amd64.deb) ...
+Selecting previously unselected package nodejs.
+Unpacking nodejs (from .../nodejs_0.6.12~dfsg1-1ubuntu1_amd64.deb) ...
+Selecting previously unselected package node-abbrev.
+Unpacking node-abbrev (from .../node-abbrev_1.0.3-1_all.deb) ...
+Selecting previously unselected package node-inherits.
+Unpacking node-inherits (from .../node-inherits_0.1-1_all.deb) ...
+Selecting previously unselected package node-block-stream.
+Unpacking node-block-stream (from .../node-block-stream_0.0.5-1_all.deb) ...
+Selecting previously unselected package node-rimraf.
+Unpacking node-rimraf (from .../node-rimraf_2.0.1-1_all.deb) ...
+Selecting previously unselected package node-mkdirp.
+Unpacking node-mkdirp (from .../node-mkdirp_0.3.1-2_all.deb) ...
+Selecting previously unselected package node-graceful-fs.
+Unpacking node-graceful-fs (from .../node-graceful-fs_1.1.8-1_all.deb) ...
+Selecting previously unselected package node-fstream.
+Unpacking node-fstream (from .../node-fstream_0.1.13-1_all.deb) ...
+Selecting previously unselected package node-ini.
+Unpacking node-ini (from .../node-ini_1.0.2-1_all.deb) ...
+Selecting previously unselected package node-lru-cache.
+Unpacking node-lru-cache (from .../node-lru-cache_1.0.5-1_all.deb) ...
+Selecting previously unselected package node-minimatch.
+Unpacking node-minimatch (from .../node-minimatch_0.2.0-1_all.deb) ...
+Selecting previously unselected package node-nopt.
+Unpacking node-nopt (from .../node-nopt_1.0.10-1_all.deb) ...
+Selecting previously unselected package node-request.
+Unpacking node-request (from .../node-request_2.9.153-1_all.deb) ...
+Selecting previously unselected package node-semver.
+Unpacking node-semver (from .../node-semver_1.0.13-1_all.deb) ...
+Selecting previously unselected package node-tar.
+Unpacking node-tar (from .../node-tar_0.1.13-1_all.deb) ...
+Selecting previously unselected package node-which.
+Unpacking node-which (from .../node-which_1.0.5-1_all.deb) ...
+Selecting previously unselected package nodejs-dev.
+Unpacking nodejs-dev (from .../nodejs-dev_0.6.12~dfsg1-1ubuntu1_amd64.deb) ...
+Selecting previously unselected package npm.
+Unpacking npm (from .../npm_1.1.4~dfsg-1_all.deb) ...
+Processing triggers for man-db ...
+Processing triggers for doc-base ...
+Processing 3 added doc-base files...
+Setting up libc-ares2 (1.7.5-1) ...
+Setting up wwwconfig-common (0.2.2) ...
+Setting up javascript-common (8) ...
+Setting up zlib1g-dev (1:1.2.3.4.dfsg-3ubuntu4) ...
+Setting up libssl-dev (1.0.1-4ubuntu5.11) ...
+Setting up libssl-doc (1.0.1-4ubuntu5.11) ...
+Setting up libv8-3.7.12.22 (3.7.12.22-3) ...
+Setting up node-node-uuid (1.2.0~20110510-2) ...
+Setting up libc-ares-dev (1.7.5-1) ...
+Setting up libev4 (1:4.11-1) ...
+Setting up libev-dev (1:4.11-1) ...
+Setting up libv8-dev (3.7.12.22-3) ...
+Setting up nodejs (0.6.12~dfsg1-1ubuntu1) ...
+update-alternatives: using /usr/bin/node to provide /usr/bin/js (js) in auto mode.
+Setting up node-abbrev (1.0.3-1) ...
+Setting up node-inherits (0.1-1) ...
+Setting up node-block-stream (0.0.5-1) ...
+Setting up node-rimraf (2.0.1-1) ...
+Setting up node-mkdirp (0.3.1-2) ...
+Setting up node-graceful-fs (1.1.8-1) ...
+Setting up node-fstream (0.1.13-1) ...
+Setting up node-ini (1.0.2-1) ...
+Setting up node-lru-cache (1.0.5-1) ...
+Setting up node-minimatch (0.2.0-1) ...
+Setting up node-nopt (1.0.10-1) ...
+Setting up node-request (2.9.153-1) ...
+Setting up node-semver (1.0.13-1) ...
+Setting up node-tar (0.1.13-1) ...
+Setting up node-which (1.0.5-1) ...
+Setting up nodejs-dev (0.6.12~dfsg1-1ubuntu1) ...
+Setting up npm (1.1.4~dfsg-1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ sudo apt-get install npm[C[C[C[C[C[C[C[8Pnpm install -g karma
+[37;40mnpm[0m [32;40mhttp[0m [35mGET[0m https://registry.npmjs.org/karma
+
+[37;40mnpm[0m [31;40mERR![0m Error: failed to fetch from registry: karma
+[37;40mnpm[0m [31;40mERR![0m     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+[37;40mnpm[0m [31;40mERR![0m     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+[37;40mnpm[0m [31;40mERR![0m     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:136:18)
+[37;40mnpm[0m [31;40mERR![0m     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+[37;40mnpm[0m [31;40mERR![0m     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:212:58)
+[37;40mnpm[0m [31;40mERR![0m     at Request.emit (events.js:88:20)
+[37;40mnpm[0m [31;40mERR![0m     at ClientRequest.<anonymous> (/usr/lib/nodejs/request/main.js:412:12)
+[37;40mnpm[0m [31;40mERR![0m     at ClientRequest.emit (events.js:67:17)
+[37;40mnpm[0m [31;40mERR![0m     at HTTPParser.onIncoming (http.js:1261:11)
+[37;40mnpm[0m [31;40mERR![0m     at HTTPParser.onHeadersComplete (http.js:102:31)
+[37;40mnpm[0m [31;40mERR![0m You may report this log at:
+[37;40mnpm[0m [31;40mERR![0m     <http://bugs.debian.org/npm>
+[37;40mnpm[0m [31;40mERR![0m or use
+[37;40mnpm[0m [31;40mERR![0m     reportbug --attach /home/denisdbell/git/Jarentals/jarentals_angular/WebContent/main/npm-debug.log npm
+[37;40mnpm[0m [31;40mERR![0m 
+[37;40mnpm[0m [31;40mERR![0m [35mSystem[0m Linux 3.8.0-35-generic
+[37;40mnpm[0m [31;40mERR![0m [35mcommand[0m "node" "/usr/bin/npm" "install" "-g" "karma"
+[37;40mnpm[0m [31;40mERR![0m [35mcwd[0m /home/denisdbell/git/Jarentals/jarentals_angular/WebContent/main
+[37;40mnpm[0m [31;40mERR![0m [35mnode -v[0m v0.6.12
+[37;40mnpm[0m [31;40mERR![0m [35mnpm -v[0m 1.1.4
+[37;40mnpm[0m [31;40mERR![0m [35mmessage[0m failed to fetch from registry: karma
+[37;40mnpm[0m [31;40mERR![0m 
+[37;40mnpm[0m [31;40mERR![0m Additional logging details can be found in:
+[37;40mnpm[0m [31;40mERR![0m     /home/denisdbell/git/Jarentals/jarentals_angular/WebContent/main/npm-debug.log
+[37;40mnpm[0m not ok
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ npm install -g karma
+[37;40mnpm[0m [32;40mhttp[0m [35mGET[0m https://registry.npmjs.org/karma
+
+[37;40mnpm[0m [31;40mERR![0m Error: failed to fetch from registry: karma
+[37;40mnpm[0m [31;40mERR![0m     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+[37;40mnpm[0m [31;40mERR![0m     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+[37;40mnpm[0m [31;40mERR![0m     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:136:18)
+[37;40mnpm[0m [31;40mERR![0m     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+[37;40mnpm[0m [31;40mERR![0m     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:212:58)
+[37;40mnpm[0m [31;40mERR![0m     at Request.emit (events.js:88:20)
+[37;40mnpm[0m [31;40mERR![0m     at ClientRequest.<anonymous> (/usr/lib/nodejs/request/main.js:412:12)
+[37;40mnpm[0m [31;40mERR![0m     at ClientRequest.emit (events.js:67:17)
+[37;40mnpm[0m [31;40mERR![0m     at HTTPParser.onIncoming (http.js:1261:11)
+[37;40mnpm[0m [31;40mERR![0m     at HTTPParser.onHeadersComplete (http.js:102:31)
+[37;40mnpm[0m [31;40mERR![0m You may report this log at:
+[37;40mnpm[0m [31;40mERR![0m     <http://bugs.debian.org/npm>
+[37;40mnpm[0m [31;40mERR![0m or use
+[37;40mnpm[0m [31;40mERR![0m     reportbug --attach /home/denisdbell/git/Jarentals/jarentals_angular/WebContent/main/npm-debug.log npm
+[37;40mnpm[0m [31;40mERR![0m 
+[37;40mnpm[0m [31;40mERR![0m [35mSystem[0m Linux 3.8.0-35-generic
+[37;40mnpm[0m [31;40mERR![0m [35mcommand[0m "node" "/usr/bin/npm" "install" "-g" "karma"
+[37;40mnpm[0m [31;40mERR![0m [35mcwd[0m /home/denisdbell/git/Jarentals/jarentals_angular/WebContent/main
+[37;40mnpm[0m [31;40mERR![0m [35mnode -v[0m v0.6.12
+[37;40mnpm[0m [31;40mERR![0m [35mnpm -v[0m 1.1.4
+[37;40mnpm[0m [31;40mERR![0m [35mmessage[0m failed to fetch from registry: karma
+[37;40mnpm[0m [31;40mERR![0m 
+[37;40mnpm[0m [31;40mERR![0m Additional logging details can be found in:
+[37;40mnpm[0m [31;40mERR![0m     /home/denisdbell/git/Jarentals/jarentals_angular/WebContent/main/npm-debug.log
+[37;40mnpm[0m not ok
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ npm install -g karma[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcurl http://npmjs.org/install.sh | sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0   184    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0100   184  100   184    0     0     61      0  0:00:03  0:00:02  0:00:01   276
+sh: 1: cannot open html: No such file
+sh: 2: Syntax error: redirection unexpected
+]0;denisdbell@denisdbell-ThinkPad-T430: ~/git/Jarentals/jarentals_angular/WebContent/maindenisdbell@denisdbell-ThinkPad-T430:~/git/Jarentals/jarentals_angular/WebContent//main$ curl http://npmjs.org/install.sh | sh[K[K[K[K[K
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body bgcolor="white">

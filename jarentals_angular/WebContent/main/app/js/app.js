@@ -19,5 +19,5 @@ JArentalsApplication.config(function($routeProvider,$FBProvider) {
 
 JArentalsApplication.run(function($rootScope,$location,SERVICE_CONSTANTS){
     //Set service end point to current url
-    $rootScope.serviceEndPoint = $location.$$protocol + "://" + $location.$$host + SERVICE_CONSTANTS.SERVICE_CONTEXT_ROOT;
+    $rootScope.serviceEndPoint = SERVICE_CONSTANTS.SERVICE_CONTEXT_ROOT;
 });
