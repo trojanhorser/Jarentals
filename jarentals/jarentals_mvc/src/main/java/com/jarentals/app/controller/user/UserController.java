@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.jarental.app.exceptions.user.UserAlreadyExistsException;
 import com.jarentals.app.service.UserService;
 import com.jarentals.domain.model.User;
 
@@ -44,10 +45,17 @@ public class UserController {
 	
 	@RequestMapping(value = "/user",method = RequestMethod.POST, produces={"application/json"})
 	public ResponseEntity<User> addUser(@RequestBody User user) {
-		User newUser = userService.addUser(user);
-		if(newUser!=null){
-			return new ResponseEntity<User>(user,HttpStatus.OK);
-		}else{
+		
+		try {	
+			User newUser = userService.addUser(user);
+			
+			if(newUser!=null){
+				return new ResponseEntity<User>(user,HttpStatus.OK);
+			}else{
+				return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+			}
+		} catch (UserAlreadyExistsException e) {
+			e.printStackTrace();
 			return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
 		}
 	}	

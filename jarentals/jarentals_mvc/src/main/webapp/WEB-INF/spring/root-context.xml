@@ -16,8 +16,9 @@
     <!-- LIQUIBASE CONFIGUARATION -->
     <import resource="beans/beans-liquibase.xml" />
     
-    
     <!-- Services -->
     <import resource="beans/beans-services.xml" />
     
+    <!-- Spring Social -->
+    <import resource="beans/beans-social-facebook.xml" />
 </beans>

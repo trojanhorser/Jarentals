@@ -5,6 +5,6 @@
  * */
 
 JArentalsApplication.constant('RESOURCE_CONSTANTS',{
-    'USER_SERVICE_END_POINT': '/user/',
+    'USER_SERVICE_END_POINT': '/user',
 });
 

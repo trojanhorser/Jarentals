@@ -4,7 +4,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Jasmine Spec Runner v2.0.0</title>
+  <title>Jarentals Unit Tests</title>
 
   <link rel="shortcut icon" type="image/png" href="lib/jasmine-core/jasmine_favicon.png">
   <link rel="stylesheet" type="text/css" href="lib/jasmine-core/jasmine.css">
