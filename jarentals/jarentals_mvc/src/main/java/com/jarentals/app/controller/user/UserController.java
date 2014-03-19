@@ -34,6 +34,7 @@ public class UserController {
 
 	@RequestMapping(value = "/user/{id}",method = RequestMethod.GET, produces={"application/json"})
 	public @ResponseBody ResponseEntity<User> getUserByid(@PathVariable("id") Long id) {
+		logger.info("getUserByid");
 		User user = null;
 		user = userService.getUserById(id);
 		if(user!=null){
@@ -45,7 +46,7 @@ public class UserController {
 	
 	@RequestMapping(value = "/user",method = RequestMethod.POST, produces={"application/json"})
 	public ResponseEntity<User> addUser(@RequestBody User user) {
-		
+		logger.info("addUser");
 		try {	
 			User newUser = userService.addUser(user);
 			
