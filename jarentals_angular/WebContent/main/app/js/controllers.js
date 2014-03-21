@@ -5,8 +5,6 @@ JArentalsApplication.controller('LoginController',function($scope,$FB, $window, 
 
   updateLoginStatus(updateApiMe);
   
-  var User = UserService.get();  
-	  
   $scope.login = function () {
 	
     $FB.login(function (res) {

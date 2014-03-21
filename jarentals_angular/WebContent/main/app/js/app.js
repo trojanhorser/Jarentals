@@ -8,6 +8,7 @@ JArentalsApplication.config(function($routeProvider,$FBProvider) {
 
   $routeProvider.when('/login', {templateUrl: 'partials/login.html', controller: 'LoginController'});
   $routeProvider.when('/main', {templateUrl: 'partials/main.html', controller: 'LoginController'});
+  $routeProvider.when('/register', {templateUrl: 'partials/register.html', controller: 'RegistrationController'});
   $routeProvider.otherwise({redirectTo: '/view1'});
    
   //initialization of FBProvider
