@@ -19,6 +19,4 @@
     <!-- Services -->
     <import resource="beans/beans-services.xml" />
     
-    <!-- Spring Social -->
-    <import resource="beans/beans-social-facebook.xml" />
 </beans>

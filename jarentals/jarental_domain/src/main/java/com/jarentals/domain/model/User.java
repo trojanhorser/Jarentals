@@ -19,6 +19,8 @@ import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -36,6 +38,7 @@ public class User {
 
 	private static final long serialVersionUID = -2952735933715107252L;
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column
 	private Long id;
 	@Column(name = "fb_id")

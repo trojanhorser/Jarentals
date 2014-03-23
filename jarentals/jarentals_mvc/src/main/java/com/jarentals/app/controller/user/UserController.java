@@ -10,10 +10,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.jarental.app.exceptions.user.UserAlreadyExistsException;
 import com.jarentals.app.service.UserService;
+import com.jarentals.domain.enumeration.RolesTypes;
+import com.jarentals.domain.enumeration.UserStatusTypes;
 import com.jarentals.domain.model.User;
 
 
@@ -48,12 +51,15 @@ public class UserController {
 	public ResponseEntity<User> addUser(@RequestBody User user) {
 		logger.info("addUser");
 		try {	
+			
+			user.setRoleId(RolesTypes.USER.intValue());
+			user.setUserStatusId(UserStatusTypes.ACTIVE.intValue());
 			User newUser = userService.addUser(user);
 			
 			if(newUser!=null){
 				return new ResponseEntity<User>(user,HttpStatus.OK);
 			}else{
-				return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+				return new ResponseEntity<User>(HttpStatus.BAD_REQUEST);
 			}
 		} catch (UserAlreadyExistsException e) {
 			e.printStackTrace();

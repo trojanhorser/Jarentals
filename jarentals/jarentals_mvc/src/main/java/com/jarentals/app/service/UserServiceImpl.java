@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
 			throw new UserAlreadyExistsException(IExceptionMessages.USER_ALREADY_EXIST);
 		}
 		
-		userRepository.save(user);
+		 user = userRepository.save(user);
 		
 		return user;
 	}

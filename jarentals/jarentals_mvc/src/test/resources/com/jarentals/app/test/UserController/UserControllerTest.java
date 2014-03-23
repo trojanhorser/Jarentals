@@ -26,13 +26,15 @@ public class UserControllerTest {
 	private UserController userController;
 	private Long userId; 
 	private ResponseEntity<User> goodHttpResponse;
+	private ResponseEntity<User> notFoundHttpResponse;
 	private ResponseEntity<User> badHttpResponse;
 		
 	@Before
 	public void setUp(){
 		 MockitoAnnotations.initMocks(this);
 		 goodHttpResponse = new ResponseEntity<User>(user,HttpStatus.OK);
-		 badHttpResponse = new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+		 notFoundHttpResponse = new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+		 badHttpResponse =  new ResponseEntity<User>(HttpStatus.BAD_REQUEST);
 		 userId = new Long(1);
 		 user = new User();
 		 user.setEmail("someone@jarentals.com");
@@ -47,7 +49,7 @@ public class UserControllerTest {
 	public void testGetUserById_Should_Return_400_Response_When_User_Is_Not_Found(){
 		when(userService.getUserById(userId)).thenReturn(null);
 		ResponseEntity<User> response = userController.getUserByid(userId);
-		assertEquals(response.getStatusCode(),badHttpResponse.getStatusCode());
+		assertEquals(response.getStatusCode(),notFoundHttpResponse.getStatusCode());
 	}
 	
 	@Test
@@ -88,7 +90,8 @@ public class UserControllerTest {
 	
 	@Test
 	public void testAddUser_Should_Return_A_400_Response_When__UserExistsException_Is_Thrown() throws UserAlreadyExistsException{
+		when(userService.addUser(user)).thenReturn(user);
 		ResponseEntity<User> response = userController.addUser(user);
-	    assertEquals(response.getStatusCode(),badHttpResponse.getStatusCode());
+	    assertEquals(response.getStatusCode(),notFoundHttpResponse.getStatusCode());
 	}
 }
