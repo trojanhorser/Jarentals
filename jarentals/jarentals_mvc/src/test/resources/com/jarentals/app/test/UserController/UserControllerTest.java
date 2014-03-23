@@ -11,7 +11,6 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import com.jarental.app.exceptions.user.UserAlreadyExistsException;
 import com.jarentals.app.controller.user.UserController;
 import com.jarentals.app.service.UserService;
 import com.jarentals.domain.model.User;
@@ -40,8 +39,7 @@ public class UserControllerTest {
 		 user.setEmail("someone@jarentals.com");
 		 userController = new UserController(userService);
 	}
-	
-	
+
 	/*
 	 * Tests for getUserById method
 	 */
@@ -69,29 +67,22 @@ public class UserControllerTest {
 	 * Tests for addUser method
 	 */
 	@Test
-	public void testAddUser_Should_Return_400_Response_When_User_Is_Not_Saved() throws UserAlreadyExistsException{
+	public void testAddUser_Should_Return_400_Response_When_User_Is_Not_Saved(){
 		when(userService.addUser(user)).thenReturn(null);
 		ResponseEntity<User> response = userController.addUser(user);
 		assertEquals(response.getStatusCode(),badHttpResponse.getStatusCode());
 	}
 	
 	@Test
-	public void testAddUser_Should_Return_200_Response_When_User_Is_Successfullty_Saved() throws UserAlreadyExistsException{
+	public void testAddUser_Should_Return_200_Response_When_User_Is_Successfullty_Saved(){
 		when(userService.addUser(user)).thenReturn(user);
 		ResponseEntity<User> response = userController.addUser(user);
 		assertEquals(response.getStatusCode(),goodHttpResponse.getStatusCode());
 	}
 	
 	@Test
-	public void testAddUser_Should_Call_UserService_addUser_Method() throws UserAlreadyExistsException{
+	public void testAddUser_Should_Call_UserService_addUser_Method() {
 		userController.addUser(user);
 		verify(userService).addUser(user);	
-	}
-	
-	@Test
-	public void testAddUser_Should_Return_A_400_Response_When__UserExistsException_Is_Thrown() throws UserAlreadyExistsException{
-		when(userService.addUser(user)).thenReturn(user);
-		ResponseEntity<User> response = userController.addUser(user);
-	    assertEquals(response.getStatusCode(),notFoundHttpResponse.getStatusCode());
 	}
 }

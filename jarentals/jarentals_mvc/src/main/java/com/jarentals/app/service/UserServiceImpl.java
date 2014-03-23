@@ -21,16 +21,17 @@ public class UserServiceImpl implements UserService {
 		this.userRepository = userRepository;
 	}
 
-	public User addUser(User user) throws UserAlreadyExistsException{
+	public User addUser(User user) {
 		
 		User foundUser = userRepository.findUserByEmail(user.getEmail());
 		
-		if(foundUser != null){
-			throw new UserAlreadyExistsException(IExceptionMessages.USER_ALREADY_EXIST);
+		//If user is not found save the new user
+		if(foundUser == null){
+			 user = userRepository.save(user);
+		}else{
+			//Otherwise return the found user
+			user = foundUser;
 		}
-		
-		 user = userRepository.save(user);
-		
 		return user;
 	}
 	

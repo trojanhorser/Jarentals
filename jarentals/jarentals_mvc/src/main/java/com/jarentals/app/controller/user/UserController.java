@@ -50,20 +50,15 @@ public class UserController {
 	@RequestMapping(value = "/user",method = RequestMethod.POST, produces={"application/json"})
 	public ResponseEntity<User> addUser(@RequestBody User user) {
 		logger.info("addUser");
-		try {	
-			
-			user.setRoleId(RolesTypes.USER.intValue());
-			user.setUserStatusId(UserStatusTypes.ACTIVE.intValue());
-			User newUser = userService.addUser(user);
-			
-			if(newUser!=null){
-				return new ResponseEntity<User>(user,HttpStatus.OK);
-			}else{
-				return new ResponseEntity<User>(HttpStatus.BAD_REQUEST);
-			}
-		} catch (UserAlreadyExistsException e) {
-			e.printStackTrace();
-			return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+		
+		user.setRoleId(RolesTypes.USER.intValue());
+		user.setUserStatusId(UserStatusTypes.ACTIVE.intValue());
+		User newUser = userService.addUser(user);
+		
+		if(newUser!=null){
+			return new ResponseEntity<User>(user,HttpStatus.OK);
+		}else{
+			return new ResponseEntity<User>(HttpStatus.BAD_REQUEST);
 		}
 	}	
 	
