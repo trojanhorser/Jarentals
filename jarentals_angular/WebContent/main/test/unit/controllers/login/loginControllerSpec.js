@@ -2,9 +2,9 @@
 
 /* jasmine specs for controllers go here */
 
-describe('Registration Controller',function(){
+describe('Login Controller',function(){
    
-	var RegistrationController,scope,FB;
+	var LoginController,scope,FB;
 	
     beforeEach(module('JArentalsApplication'));
 	
@@ -14,7 +14,7 @@ describe('Registration Controller',function(){
 			
 			FB = $FB;
 			
-			RegistrationController = $controller('RegistrationController',
+			LoginController = $controller('LoginController',
 				{
 					$scope: scope,	
 					$FB: FB

@@ -5,4 +5,4 @@
 <script src="../app/js/constants/resourceConstants.js"></script>
 <script type="text/javascript" src="../app/js/services.js"> </script>
 <script type="text/javascript" src="../app/js/controllers.js"> </script>
-<script type="text/javascript" src="../app/js/controllers/registration/registrationController.js"> </script>
+<script type="text/javascript" src="../app/js/controllers/login/loginController.js"> </script>
