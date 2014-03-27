@@ -3,8 +3,6 @@ package com.jarentals.app.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jarental.app.exceptions.messages.IExceptionMessages;
-import com.jarental.app.exceptions.user.UserAlreadyExistsException;
 import com.jarentals.domain.model.User;
 import com.jarentals.domain.repository.UserRepository;
 
@@ -48,6 +46,12 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User getUserByEmail(String email){
 		User user = userRepository.findUserByEmail(email);
+		return user;
+	}
+
+	@Override
+	public User getUserByFbId(String fbid) {
+		User user = userRepository.findUserByFbId(fbid);
 		return user;
 	}
 }

@@ -1,5 +1,8 @@
 package com.jarentals.common.util;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import org.apache.commons.lang.StringUtils;
 
 public class Util {
@@ -25,4 +28,8 @@ public class Util {
 		return result;
 	}
 	
+	public static Date getCurrentDate(){
+		Calendar cal = Calendar.getInstance();
+		return cal.getTime();
+	}
 }

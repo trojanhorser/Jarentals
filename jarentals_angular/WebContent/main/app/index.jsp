@@ -16,6 +16,7 @@
 		  <ul class="nav navbar-nav">
 		    <li data-match-route="/login"><a href="#/login">Login</a></li>
 		    <li data-match-route="/main"><a href="#/main">Main Page</a></li>
+		    <li data-match-route="/register"><a href="#/register">Register</a></li>
 		  </ul>
 		</div>
 	    <div ng-view></div>

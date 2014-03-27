@@ -10,5 +10,5 @@ import com.jarentals.domain.model.User;
 public interface UserRepository extends JpaRepository<User, Long> {
 	
 	public User findUserByEmail(String email);
-
+	public User findUserByFbId(String fbid);
 }
