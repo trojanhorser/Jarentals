@@ -1,0 +1,49 @@
+'use strict';
+
+/* Controllers */
+JArentalsApplication.controller('LoginController',function($scope,UserService,$FB,$location,$rootScope){
+		
+	$scope.render = false;
+	$scope.username = null;
+	$scope.password = null;
+	$scope.email = null;
+
+	$scope.registerFacebookUser = function(){
+		//Get login status
+		$FB.getLoginStatus(function(res){
+			
+			$scope.loginStatus = res;
+			
+			if($scope.loginStatus.status != "connected"){
+				//if($scope.loginStatus.){}
+				$FB.login(function (res) {
+			      if (res.authResponse) {
+			    	  	  //Get facebook user details
+			    	  	  $FB.api('/me',function(res){
+			    	  		  $scope.faceBookUser = res;
+				    		  $scope.username = $scope.faceBookUser.first_name;
+						      $scope.email = $scope.faceBookUser.email;	
+							  $scope.password = $scope.faceBookUser.id;
+							  console.log($scope.faceBookUser);
+							  //Login or Register user
+							  $scope.registerUser();
+			    	  	  },function(error){
+			    	  		  console.log("display error message if face book data was not retrived");
+			    	  	  });
+			      }
+			    },function(error){
+			    	console.log("Facebook error has occured");
+			    }, {scope: 'email,user_likes'});
+		    }
+			
+		});
+	}
+	
+	$scope.registerUser = function(){
+		var user = new UserService;	
+		user.username = $scope.username;
+		user.password = $scope.password;
+		user.email = $scope.email;
+	    user.$save();		
+	}
+});

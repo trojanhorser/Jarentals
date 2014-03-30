@@ -17,6 +17,10 @@
 		    <li data-match-route="/login"><a href="#/login">Login</a></li>
 		    <li data-match-route="/main"><a href="#/main">Main Page</a></li>
 		    <li data-match-route="/register"><a href="#/register">Register</a></li>
+		    <li data-match-route="/view_your_places" ng-show="loggedIn"><a href="#/view_your_places">View Your Places</a></li>
+		    <li data-match-route="/edit_your_profile" ng-show="loggedIn" ><a href="#/edit_your_proflie">Edit Your Profile</a></li>
+		    <li data-match-route="/view_all_users"  ng-show="loggedIn"><a href="#/">View Users</a></li>
+		    <li data-match-route="/view_all_places" ng-show="loggedIn"><a href="#/">View Places</a></li>
 		  </ul>
 		</div>
 	    <div ng-view></div>

@@ -19,6 +19,8 @@ JArentalsApplication.config(function($routeProvider,$FBProvider) {
 });
 
 JArentalsApplication.run(function($rootScope,$location,SERVICE_CONSTANTS){
-    //Set service end point to current url
+    
+	$rootScope.loggedIn = false;
+	//Set service end point to current url
     $rootScope.serviceEndPoint = SERVICE_CONSTANTS.SERVICE_CONTEXT_ROOT;
 });
