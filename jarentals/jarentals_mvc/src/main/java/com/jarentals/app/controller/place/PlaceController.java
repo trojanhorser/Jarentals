@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.jarentals.app.service.place.PlaceService;
 import com.jarentals.domain.model.Place;
-import com.jarentals.domain.model.User;
 
 @Controller
 public class PlaceController {
@@ -21,14 +20,15 @@ public class PlaceController {
 	PlaceService placeService;
 	
 	@RequestMapping("/place")
-	public @ResponseBody List<Place> getAllPlaces(@RequestParam("start") int start,@RequestParam("end") int end) {
+	public @ResponseBody  ResponseEntity<List<Place>> getAllPlaces(@RequestParam("start") int start,@RequestParam("end") int end) {
 		
 		List<Place> places = placeService.getAllPlaces(start, end); 
 		
 		if(places == null || places.size() == 0 ){
-			return (List<Place>) new ResponseEntity<List<Place>>(new ArrayList<Place>(),HttpStatus.OK);
+			return new ResponseEntity<List<Place>>(new ArrayList<Place>(),HttpStatus.OK);
+		}else{
+			return new ResponseEntity<List<Place>>(places,HttpStatus.OK);
 		}
-		return null;
 	}
 	
 	@Autowired

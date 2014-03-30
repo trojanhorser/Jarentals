@@ -10,6 +10,6 @@ import com.jarentals.domain.model.Place;
 
 public interface PlaceRepository extends JpaRepository<Place, Long>{
 	
-	@Query("SELECT u FROM Place u")
+	@Query("SELECT p FROM Place p")
 	List<Place> findAllPlaces(Pageable page);
 }

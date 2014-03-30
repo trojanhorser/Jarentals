@@ -16,6 +16,7 @@
 	
 	<bean id="vendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" >
 		<property name="generateDdl" value="true" />
+		<property name="showSql" value="true" />
 	</bean>	
 	
 	 <!--Entity manager packagesToScan attribute must point to the packages which contains the models  -->
