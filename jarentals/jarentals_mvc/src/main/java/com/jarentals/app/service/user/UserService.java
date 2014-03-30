@@ -1,4 +1,4 @@
-package com.jarentals.app.service;
+package com.jarentals.app.service.user;
 
 import com.jarentals.domain.model.User;
 

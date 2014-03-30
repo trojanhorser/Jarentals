@@ -12,7 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import com.jarentals.app.controller.user.UserController;
-import com.jarentals.app.service.UserService;
+import com.jarentals.app.service.user.UserService;
 import com.jarentals.domain.model.User;
 
 public class UserControllerTest {

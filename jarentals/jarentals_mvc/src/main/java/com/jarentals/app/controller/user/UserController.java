@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.jarental.app.exceptions.user.UserAlreadyExistsException;
-import com.jarentals.app.service.UserService;
+import com.jarentals.app.service.user.UserService;
 import com.jarentals.common.util.Util;
 import com.jarentals.domain.enumeration.RolesTypes;
 import com.jarentals.domain.enumeration.UserStatusTypes;

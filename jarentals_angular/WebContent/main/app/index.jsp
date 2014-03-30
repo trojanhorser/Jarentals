@@ -11,7 +11,7 @@
 	<div ng-controller="MainController">
 		<div class="navbar navbar-default" role="navigation" bs-navbar>
 		  <div class="navbar-header">
-		    <a class="navbar-brand" href="#">Brand</a>
+		    <a class="navbar-brand" href="#">Jarentals</a>
 		  </div>
 		  <ul class="nav navbar-nav">
 		    <li data-match-route="/login"><a href="#/login">Login</a></li>

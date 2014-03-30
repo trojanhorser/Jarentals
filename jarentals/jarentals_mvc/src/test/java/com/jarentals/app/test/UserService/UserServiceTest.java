@@ -9,7 +9,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import com.jarental.app.exceptions.user.UserAlreadyExistsException;
-import com.jarentals.app.service.UserServiceImpl;
+import com.jarentals.app.service.user.UserServiceImpl;
 import com.jarentals.domain.model.User;
 import com.jarentals.domain.repository.UserRepository;
 
