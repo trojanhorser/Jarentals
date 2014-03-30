@@ -108,6 +108,12 @@ JArentalsApplication.controller('LoginController',function($scope,UserService,$F
 		user.username = $scope.username;
 		user.password = $scope.password;
 		user.email = $scope.email;
-	    user.$save();		
+	    user.$save(function(data){
+	    	console.log(user);
+	    	$rootScope.isLoggedIn = true;
+	    },function(error){
+	    	console.log("Print error if user was not found");
+	    });	
+	    
 	}
 });
