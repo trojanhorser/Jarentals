@@ -1,12 +1,16 @@
 package com.jarentals.domain.model;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
@@ -37,6 +41,10 @@ public class Place {
 	private Date createdWhen;
 	@Column(name="updated_when")
 	private Date updatedWhen;
+	
+	@OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "place_id")
+	private List<PlaceImages> placeImages;
 	
 	public Long getId() {
 		return id;
@@ -82,5 +90,12 @@ public class Place {
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	public List<PlaceImages> getPlaceImages() {
+		return placeImages;
+	}
+	public void setPlaceImages(List<PlaceImages> placeImages) {
+		this.placeImages = placeImages;
 	}	
+	
 }

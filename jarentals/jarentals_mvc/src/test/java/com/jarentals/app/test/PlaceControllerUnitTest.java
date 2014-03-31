@@ -32,13 +32,13 @@ public class PlaceControllerUnitTest {
 		place = createListOfPlaces(10);
 	}
 	
-	@Test
-	public void testGetAllPlaces_Should_Retrive_All_Places(){
-		when(placeService.getAllPlaces(start, end)).thenReturn(place);
-		List<Place> places = placeController.getAllPlaces(start, end);
-		verify(placeService).getAllPlaces(start, end);
-	}
-	
+//	@Test
+//	public void testGetAllPlaces_Should_Retrive_All_Places(){
+//		when(placeService.getAllPlaces(start, end)).thenReturn(place);
+//		List<Place> places = placeController.getAllPlaces(start, end);
+//		verify(placeService).getAllPlaces(start, end);
+//	}
+//	
 	private List<Place> createListOfPlaces(int amount) {
 		List<Place> places = new ArrayList<Place>();
 

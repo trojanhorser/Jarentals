@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.jarental.app.dto.place.PlaceDto;
 import com.jarentals.app.service.place.PlaceService;
-import com.jarentals.domain.model.Place;
 
 @Controller
 public class PlaceController {
@@ -20,14 +20,14 @@ public class PlaceController {
 	PlaceService placeService;
 	
 	@RequestMapping("/place")
-	public @ResponseBody  ResponseEntity<List<Place>> getAllPlaces(@RequestParam("start") int start,@RequestParam("end") int end) {
+	public @ResponseBody  ResponseEntity<List<PlaceDto>> getAllPlaces(@RequestParam("start") int start,@RequestParam("end") int end) {
 		
-		List<Place> places = placeService.getAllPlaces(start, end); 
+		List<PlaceDto> places = placeService.getAllPlaces(start, end); 
 		
 		if(places == null || places.size() == 0 ){
-			return new ResponseEntity<List<Place>>(new ArrayList<Place>(),HttpStatus.OK);
+			return new ResponseEntity<List<PlaceDto>>(new ArrayList<PlaceDto>(),HttpStatus.OK);
 		}else{
-			return new ResponseEntity<List<Place>>(places,HttpStatus.OK);
+			return new ResponseEntity<List<PlaceDto>>(places,HttpStatus.OK);
 		}
 	}
 	

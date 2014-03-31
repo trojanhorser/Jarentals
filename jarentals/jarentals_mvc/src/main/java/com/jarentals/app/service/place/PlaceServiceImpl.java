@@ -1,5 +1,6 @@
 package com.jarentals.app.service.place;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import com.jarental.app.dto.place.PlaceDto;
 import com.jarentals.domain.model.Place;
 import com.jarentals.domain.repository.PlaceRepository;
 
@@ -17,9 +19,16 @@ public class PlaceServiceImpl implements PlaceService {
 	private Pageable pageRequest;
 	
 	@Override
-	public List<Place> getAllPlaces(int start, int end) {	
+	public List<PlaceDto> getAllPlaces(int start, int end) {	
 	    pageRequest = new PageRequest(start,end);
-		return placeRepository.findAllPlaces(pageRequest);
+		List<PlaceDto> placeDtos = new ArrayList<PlaceDto>();
+	    List<Place> places = placeRepository.findAllPlaces(pageRequest);
+		
+	    for(Place place : places ){
+	    	placeDtos.add(new PlaceDto(place));
+	    }
+	    
+	    return placeDtos;
 	}
 
 	public PlaceRepository getPlaceRepository() {
