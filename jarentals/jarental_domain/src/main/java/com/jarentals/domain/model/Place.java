@@ -42,7 +42,7 @@ public class Place {
 	@Column(name="updated_when")
 	private Date updatedWhen;
 	
-	@OneToMany(fetch = FetchType.LAZY)
+	@OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "place_id")
 	private List<PlaceImages> placeImages;
 	
