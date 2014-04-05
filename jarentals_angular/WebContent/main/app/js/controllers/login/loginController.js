@@ -1,6 +1,13 @@
 'use strict';
+/**
+ * Login controller is responsible for retrieving data from the UserService and performing view layer 
+ * specific rendering of the data which is retrieved
+ * 
+ * @author Denis Bell
+ * @date March,18 2014
+ * 
+ * */
 
-/* Controllers */
 JArentalsApplication.controller('LoginController',function($scope,UserService,$FB,$location,$rootScope){
 		
 	$scope.render = false;
@@ -9,41 +16,6 @@ JArentalsApplication.controller('LoginController',function($scope,UserService,$F
 	$scope.email = null;
 	$scope.user = null;
 
-//	$scope.registerFacebookUser = function(){
-//		//Get login status
-//		$FB.getLoginStatus(function(res){
-//			$scope.loginStatus = res;
-//			loginFaceBooKUser();
-//			console.log($scope.loginStatus);
-//		});
-//	}
-//
-//	var loginFaceBooKUser = function(){
-//		
-//		var user;
-//		
-//		if($scope.loginStatus.status != "connected"){
-//				$FB.login(function (res) {
-//			     
-//					if (res.authResponse) {
-//			    	  	  //Get facebook user details
-//			    	  	  $FB.api('/me',function(res){
-//			    	  		  $scope.faceBookUser = res;
-//				    		  $scope.username = $scope.faceBookUser.first_name;
-//						      $scope.email = $scope.faceBookUser.email;	
-//							  $scope.password = $scope.faceBookUser.id;
-//							  //Login or Register user
-//							  $scope.user = $scope.registerUser(); 
-//			    	  	  },function(error){
-//			    	  		  console.log("display error message if face book data was not retrived");
-//			    	  	  });
-//			      }
-//			    },function(error){
-//			    	console.log("Facebook error has occured");
-//			    }, {scope: 'email,user_likes'});
-//		    }
-//	}
-	
 	updateLoginStatus(updateApiMe);
 
 	  $scope.loginFaceBookUser = function () {

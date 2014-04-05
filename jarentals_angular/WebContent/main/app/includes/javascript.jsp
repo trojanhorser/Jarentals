@@ -12,10 +12,14 @@
 
  <!-- App specific -->
 <script src="js/app.js"></script>
+
+<script src="js/constants/place/placeConstants.js"></script>
+
 <script src="js/services.js"></script>
 <script src="js/controllers.js"></script>
 <script src="js/controllers/login/loginController.js"></script>
 <script src="js/controllers/main/mainController.js"></script>
+<script src="js/controllers/place/placeController.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/directives.js"></script>
 <script src="lib/angular-easyfb.js"></script>

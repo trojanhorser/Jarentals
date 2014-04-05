@@ -13,9 +13,8 @@
   <script type="text/javascript" src="lib/jasmine-core/jasmine-html.js"></script>
   <script type="text/javascript" src="lib/jasmine-core/boot.js"></script>
 
-  <!-- include source files here... -->
-  <jsp:include page="angular-dependency.jsp"/> 
-  <jsp:include page="spec-dependency.jsp"/>   
+  <!-- All dependencies -->
+  <jsp:include page="spec-dependency.jsp"/>
   
   <!-- include spec files here... -->
   <jsp:include page="spec-main.jsp"/> 
