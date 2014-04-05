@@ -15,6 +15,11 @@
  <!-- App specific -->
 <script src="../app/js/app.js"></script>
 
+<!-- Constants -->
+<script src="../app/js/constants/place/placeConstants.js"></script>
+<script src="../app/js/constants/serviceEndpointsConstants.js"></script>
+<script src="../app/js/constants/resourceConstants.js"></script>
+
 <!-- Services -->
 <script src="../app/js/services.js"></script>
 <script src="../app/js/services/place/placeService.js"></script>
@@ -30,10 +35,6 @@
 
 <!-- Directives -->
 <script src="../app/js/directives.js"></script>
-
-<!-- Constants -->
-<script src="../app/js/constants/serviceEndpointsConstants.js"></script>
-<script src="../app/js/constants/resourceConstants.js"></script>
 
 <!-- FaceBook (EZFB) -->
 <script src="../app/lib/angular-easyfb.js"></script>

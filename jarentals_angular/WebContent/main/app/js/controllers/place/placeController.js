@@ -7,14 +7,12 @@
  * 
  * */
 
-JArentalsApplication.controller('PlaceController',function($scope,PlaceService){
+JArentalsApplication.controller('PlaceController',function($scope,PlaceService,PlaceConstants){
 	
 	$scope.places;
-	$scope.pagination.start = 0;
-	$scope.pagination.end = 10;
-	$scope.pagination.offSet = 10;
 	
-	PlaceService.query({start: $scope.pagination.start, end: $scope.pagination.end  },function(){
-		
+	PlaceService.query({start: PlaceConstants.PAGINATION_MIN_DEFAULT, end: PlaceConstants.PAGINATION_MAX_DEFAULT},function(data){
+		$scope.places = data;
 	})
+	
 });
