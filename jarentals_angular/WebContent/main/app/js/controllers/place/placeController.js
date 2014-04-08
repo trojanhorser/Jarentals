@@ -13,6 +13,6 @@ JArentalsApplication.controller('PlaceController',function($scope,PlaceService,P
 	
 	PlaceService.query({start: PlaceConstants.PAGINATION_MIN_DEFAULT, end: PlaceConstants.PAGINATION_MAX_DEFAULT},function(data){
 		$scope.places = data;
-	})
+	});
 	
 });
